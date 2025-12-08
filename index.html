@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MBU University</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+    body {
+      background: #f8f9fa;
+      font-family: "Roboto Flex", sans-serif;
+    }
+   .navbar {
+  width: 1104px;
+  height: 99px;
+  padding: 0px 48px 0px 48px ;
+  border-radius: 8px;
+  margin:20px 0px 20px 220px ;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  position: relative;   
+  z-index: 9999;  
+}
+.hero-section {
+background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),url("campus.png") center/cover no-repeat;
+border-radius: 0 0 90px 90px;
+padding:220px 0px 200px 220px ;
+color: white;
+position: relative;
+z-index: 1;            
+bottom: 140px;  
+}
+.hero-badge {
+      background: #ffc107;
+      color: black;
+      padding: 8px 18px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight:600;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+.hero-form {
+      background: rgba(255, 255, 255, 0.562);
+      backdrop-filter: blur(10px);
+      width: 340px;
+      height: 320px;
+      margin-right: 260px;
+      border-radius: 20px;
+    }
+
+    .ranking-strip {
+      background: #ffc107;
+      border: solid white 10px;
+      border-radius: 10px;
+      padding: 32px;
+     width: 1120px;
+      position: relative;
+      z-index: 9999;
+      bottom: 180px;
+      margin-left: 210px;
+     font-weight: 500;
+     font-size: 27px;
+     line-height: 36px;
+     text-align:start;
+    }
+    .ranking-strip img {
+      background-color: white;
+      width: 166px;
+      height: 85px;
+      border-radius: 5px;
+    }
+
+  .rank-icon {
+  width: 120px;
+  height: 74px;
+  object-fit: contain;  
+}
+   .feature-card {
+  background: #e7e7e7dd;
+  padding: 18px;
+  border-radius: 13px;
+  border: 1.86px #d9d9d9;
+  margin-bottom: 20px;
+}
+.feature-card p{
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+}
+.feature-card img {
+  width: 40px;
+  margin-right: 12px;
+}
+
+.feature-card h6 {
+  margin-bottom: 4px;
+}
+
+.feature-card > img,
+.feature-card > h6 {
+  display: inline-block;
+  vertical-align: middle;
+}
+    .leader-img {
+      max-width: 300px;
+      border-radius: 20px;
+    }
+
+    .badge-years {
+      background:#C7080F;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 17.12px;
+      position: absolute;
+      bottom: -15px;
+      left: 60%;
+      transform: translateX(-50%);
+    }
+
+    .object-img {
+  width: 36px;      
+  height: 36px;
+  vertical-align: middle;
+ 
+}
+.content{
+    font-size: 60px;
+    line-height: 67.3px;
+}
+
+.lorem{
+    color: #FFFFFF;
+    font-weight: 100;
+    line-height: 30px;
+    font-size: 16px;
+}
+.text-content{
+    color: black;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 51.35px;
+}
+.container{
+  width: 1050px;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+
+  .navbar {
+    width: 95%;
+    margin: 12px auto;
+    padding: 10px 14px;
+  }
+
+  .navbar img {
+    height: 42px;
+  }
+
+  .navbar-toggler {
+    border: none;
+    font-size: 28px;
+    background: none;
+  }
+
+  .navbar-collapse {
+    background: white;
+    border-radius: 14px;
+    margin-top: 12px;
+    padding: 14px 0;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    padding: 12px 0;
+  }
+  .hero-section {
+    padding-top: 140px;
+    padding-bottom: 110px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 0;
+    bottom: 0;
+    min-height: 100vh;
+  }
+
+  .hero-badge {
+    text-align: center;
+    display: block;
+    margin: 0 auto 18px auto;
+    font-size: 13px;
+  }
+
+  .content {
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+  }
+  .emoji-img {
+    width: 26px;
+    height: 26px;
+  }
+  .lorem {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .hero-form {
+    width: 100%;
+    height: auto;
+    margin: 32px auto 0 auto;
+    padding: 80px 60px;
+  }
+  .ranking-strip {
+    width: 94%;
+    margin: 0 auto;
+    bottom: 0;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .ranking-strip .row {
+    gap: 10px;
+  }
+
+  .ranking-strip img,
+  .rank-icon {
+    width: 82px;
+    height: auto;
+  }
+  .text-content {
+    font-size: 26px;
+    line-height: 34px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .text-dark-emphasis {
+    text-align: center;
+    font-size: 14px;
+    padding: 0 8px;
+  }
+  .feature-card {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  .feature-card img {
+    width: 34px;
+  }
+
+  .feature-card h6 {
+    font-size: 16px;
+  }
+
+  .feature-card p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .leader-img,
+  .badge-years {
+    display: none !important;
+  }
+  .container,
+  .container-fluid {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+  .choose{
+    margin-left: 100px;
+  }
+
+}
+@media (max-width: 400px) {
+
+  .content {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .lorem {
+    font-size: 13px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+
+  .ranking-strip img {
+    width: 70px;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg d-flex justify-content-between align-items-center">
+
+  <div class="d-flex align-items-center gap-2">
+    <img src="./logo.png" height="88">
+  </div>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mbuMenu">
+    ☰
+  </button>
+  <div class="collapse navbar-collapse justify-content-center" id="mbuMenu">
+    <ul class="navbar-nav gap-3">
+      <li class="nav-item"><a class="nav-link text-dark" href="#">Why Study Here</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="#">Courses Offered</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="#">Placements</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="#">Admission Process</a></li>
+    </ul>
+  </div>
+
+  <button class="btn btn-danger px-4 d-none d-lg-block">Admission Open</button>
+</nav>
+
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero-section container-fluid">
+
+  <div class="row align-items-center">
+
+    <!-- LEFT CONTENT -->
+    <div class="col-lg-7">
+      <div class="hero-badge">34 Years of Unwavering Trust, 1 Universe of Possibilities</div>
+        <h1 class="content">
+  Pursue Your Passions<br>
+  Dream 
+  <img src="./object.png" class="object-img"> 
+  Believe 
+  <img src="./object.png" class="object-img"> 
+  Achieve
+</h1>
+<p class="lorem mt-3">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet cras nunc.<br>consectetur adipiscing elit. Sed sit amet cras nunc.
+      </p>
+    </div>
+    <div class="col-lg-5">
+      <div class="hero-form">       
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RANKINGS ================= -->
+<section class="ranking-strip container-fluid">
+  <div class="row text-center align-items-center">
+
+    <div class="col-lg-3 ">Rankings And Accreditations</div>
+
+    <!-- ALL ICONS AS IMAGES -->
+    <div class="col">
+  <img src="img1.png" class="rank-icon">
+</div>
+
+<div class="col">
+  <img src="img2.png" class="rank-icon">
+</div>
+
+<div class="col">
+  <img src="img3.png" class="rank-icon">
+</div>
+
+<div class="col">
+  <img src="img4.png" class="rank-icon">
+</div>
+ </div>
+</section>
+<section class="container">
+  <small class="choose" >WHY CHOOSE US <img src="./object.png" class="object-img"></small>
+  <div class="row align-items-center mt-2">
+    <div class="col-lg-6">
+      <h2 class="text-content">A University That Prepares <br>You for the Real World</h2>
+    </div>
+    <div class="col-lg-6">
+      <p class="text-dark-emphasis">
+        At MBU, education goes beyond classrooms into careers, research, and leadership. 
+        Students gain global exposure, advanced facilities, and industry-driven learning.
+        With 110+ recruiters, we prepare graduates to thrive anywhere in the world.
+      </p>
+    </div>
+  </div>
+  <div class="row mt-5 align-items-center">
+    <div class="col-lg-4">
+
+      <div class="feature-card">
+        <img src="trusted.png">
+        <h6 class="fw-bold mt-2">Trusted Legacy in Education</h6>
+        <p class="mt-1">34+ years of shaping leaders and innovators across multiple disciplines.</p>
+      </div>
+
+      <div class="feature-card">
+        <img src="global.png">
+        <h6 class="fw-bold mt-2">Global Opportunities</h6>
+        <p class="mt-1"> India’s first university to offer a Joint Degree Program with Penn State University (QS Top 100).</p>
+      </div>
+
+      <div class="feature-card">
+        <img src="container.png">
+        <h6 class="fw-bold mt-2">Strong Placement Track</h6>
+        <p class="mt-1">110+ recruiters, highest package up to ₹60 LPA, and dedicated career support.</p>
+      </div>
+
+    </div>
+
+    <div class="col-lg-4 text-center position-relative ">
+      <img src="man.png" class="leader-img">
+      <div class="badge-years">34+ Years of Excellence</div>
+    </div>
+    <div class="col-lg-4">
+
+      <div class="feature-card">
+        <img src="trusted.png">
+        <h6 class="fw-bold mt-2"></h6>Strong Placement Track Record
+        <p  class="mt-1">110+ recruiters, highest package up to ₹60 LPA, and dedicated career support.</p>
+      </div>
+
+      <div class="feature-card">
+        <img src="global.png">
+        <h6 class="fw-bold mt-2">World-Class Infrastructure</h6>
+        <p class="mt-1">Advanced labs, digital learning facilities, a central library with 4,500+ sq.m, and vibrant campus life.</p>
+      </div>
+      <div class="feature-card">
+        <img src="container.png">
+        <h6 class="fw-bold mt-2">Diverse Programs</h6>
+        <p class="mt-1">50+ UG, PG & PhD programs across Engineering, Business, Computer Applications and Sciences.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
