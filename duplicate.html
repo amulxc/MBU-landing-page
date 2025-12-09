@@ -1,0 +1,1957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MBU University</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+    body {
+      background: #f8f9fa;
+      font-family: "Roboto Flex", sans-serif;
+    }
+   .navbar {
+  width: 1104px;
+  height: 99px;
+  padding: 0px 48px 0px 48px ;
+  border-radius: 8px;
+  margin:20px 0px 20px 220px ;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  position: relative;   
+  z-index: 9999;  
+}
+.hero-section {
+background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),url("./image/campus.png") center/cover no-repeat;
+border-radius: 0 0 90px 90px;
+padding:220px 0px 200px 220px ;
+color: white;
+position: relative;
+z-index: 1;            
+bottom: 140px;  
+}
+.hero-badge {
+      background: #ffc107;
+      color: black;
+      padding: 8px 18px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight:600;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+.hero-form {
+      background: rgba(255, 255, 255, 0.562);
+      backdrop-filter: blur(10px);
+      width: 340px;
+      height: 320px;
+      margin-right: 260px;
+      border-radius: 20px;
+    }
+
+    .ranking-strip {
+      background: #ffc107;
+      border: solid white 10px;
+      border-radius: 10px;
+      padding: 32px;
+     width: 1120px;
+      position: relative;
+      z-index: 9999;
+      bottom: 180px;
+      margin-left: 210px;
+     font-weight: 500;
+     font-size: 27px;
+     line-height: 36px;
+     text-align:start;
+    }
+    .ranking-strip img {
+      background-color: white;
+      width: 166px;
+      height: 85px;
+      border-radius: 5px;
+    }
+
+  .rank-icon {
+  width: 120px;
+  height: 74px;
+  object-fit: contain;  
+}
+   .feature-card {
+  background: #e7e7e7dd;
+  padding: 18px;
+  border-radius: 13px;
+  border: 1.86px #d9d9d9;
+  margin-bottom: 20px;
+}
+.feature-card p{
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+}
+.feature-card img {
+  width: 40px;
+  margin-right: 12px;
+}
+
+.feature-card h6 {
+  margin-bottom: 4px;
+}
+
+.feature-card > img,
+.feature-card > h6 {
+  display: inline-block;
+  vertical-align: middle;
+}
+    .leader-img {
+      max-width: 300px;
+      border-radius: 20px;
+    }
+
+    .badge-years {
+      background:#C7080F;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 17.12px;
+      position: absolute;
+      bottom: -15px;
+      left: 60%;
+      transform: translateX(-50%);
+    }
+
+    .object-img {
+  width: 36px;      
+  height: 36px;
+  vertical-align: middle;
+ 
+}
+.content{
+    font-size: 60px;
+    line-height: 67.3px;
+}
+
+.lorem{
+    color: #FFFFFF;
+    font-weight: 100;
+    line-height: 30px;
+    font-size: 16px;
+}
+.text-content{
+    color: black;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 51.35px;
+}
+.container{
+  width: 1050px;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+
+  .navbar {
+    width: 95%;
+    margin: 12px auto;
+    padding: 10px 14px;
+  }
+
+  .navbar img {
+    height: 42px;
+  }
+
+  .navbar-toggler {
+    border: none;
+    font-size: 28px;
+    background: none;
+  }
+
+  .navbar-collapse {
+    background: white;
+    border-radius: 14px;
+    margin-top: 12px;
+    padding: 14px 0;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    padding: 12px 0;
+  }
+  .hero-section {
+    padding-top: 140px;
+    padding-bottom: 110px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 0;
+    bottom: 0;
+    min-height: 100vh;
+  }
+
+  .hero-badge {
+    text-align: center;
+    display: block;
+    margin: 0 auto 18px auto;
+    font-size: 13px;
+  }
+
+  .content {
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+  }
+  .object-img {
+    width: 26px;
+    height: 26px;
+  }
+  .lorem {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .hero-form {
+    width: 100%;
+    height: auto;
+    margin: 32px auto 0 auto;
+    padding: 80px 60px;
+  }
+  .ranking-strip {
+    width: 94%;
+    margin: 0 auto;
+    bottom: 0;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .ranking-strip .row {
+    gap: 10px;
+  }
+
+  .ranking-strip img,
+  .rank-icon {
+    width: 82px;
+    height: auto;
+  }
+  .text-content {
+    font-size: 26px;
+    line-height: 34px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .text-dark-emphasis {
+    text-align: center;
+    font-size: 14px;
+    padding: 0 8px;
+  }
+  .feature-card {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  .feature-card img {
+    width: 34px;
+  }
+
+  .feature-card h6 {
+    font-size: 16px;
+  }
+
+  .feature-card p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .leader-img,
+  .badge-years {
+    margin-bottom: 30px;
+  }
+  .container,
+  .container-fluid {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+  .choose{
+    margin-left: 100px;
+  }
+
+}
+@media (max-width: 400px) {
+
+  .content {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .lorem {
+    font-size: 13px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+
+  .ranking-strip img {
+    width: 70px;
+  }
+}
+
+
+.programs-section{
+      max-width:1400px;
+      margin:40px auto;
+      padding:40px 24px;
+      border-radius:28px;
+      color:#fff;
+      background-image:url("./image/background.png");
+      background-size:cover;
+      background-position:center;
+      overflow:hidden;
+      min-height:670px;
+    }
+    .programs-inner{
+      background:#ffffff;
+      border-radius:24px;
+      padding:20px;
+      margin-top:24px; 
+      min-height:450px;
+    }
+    .programs-label{
+      letter-spacing:2px;
+      font-size:.85rem;
+      text-transform:uppercase;
+      color:#ffffff;
+      opacity:.95;
+      font-family:"Plus Jakarta Sans",sans-serif;
+    }
+    .programs-title{
+      color:#ffffff;
+      font-size:2rem;
+      margin-top:6px;
+    }
+    .programs-image{
+      width:95%;
+      height:400px;
+      object-fit:cover;
+      border-radius:18px;
+    }
+    .programs-right{
+      max-height:390px;
+      overflow-y:auto;
+      padding-right:6px;
+    }
+    .programs-right::-webkit-scrollbar{
+      width:8px;
+    }
+    .programs-right::-webkit-scrollbar-track{
+      background:#e6e6e6;
+      border-radius:10px;
+    }
+    .programs-right::-webkit-scrollbar-thumb{
+      background:#ffde59;
+      border-radius:10px;
+    }
+    .accordion-item{
+      border:0;
+      margin-bottom:8px;
+      border-radius:12px;
+      overflow:hidden;
+    }
+    .accordion-button{
+      background:#eeeeee;
+      border-radius:12px 12px 0 0!important;
+      font-weight:600;
+      padding:14px 18px;
+      display:flex;
+      justify-content:space-between;
+    }
+    .accordion-button:not(.collapsed){
+      background:#ffde59!important;
+      color:#000!important;
+    }
+    .accordion-button::after{
+      display:none!important;
+    }
+    .icon-plus::before{
+      content:"+";
+      font-size:22px;
+    }
+    .icon-minus::before{
+      content:"–";
+      font-size:26px;
+    }
+    .accordion-body{
+      background:#fff6d1;
+      padding:12px 18px 14px;
+      font-family:"Plus Jakarta Sans",sans-serif;
+      border-radius:0 0 12px 12px;
+      color:#727272;
+    }
+    .programs-list li{
+      font-family:"Plus Jakarta Sans",sans-serif;
+      color:#727272;
+      font-size:.94rem;
+      margin-bottom:4px;
+    }
+    .about-single-img{
+      width:100%;
+      border-radius:20px;
+      object-fit:cover;
+    }
+    .about-text-block{
+      max-width:700px;
+    }
+    .about-label{
+      letter-spacing:2px;
+      font-size:1rem;
+      text-transform:uppercase;
+      font-family:"Plus Jakarta Sans",sans-serif;
+      opacity:.9;
+    }
+    .about-title{
+      font-size:2.2rem;
+      line-height:1.25;
+      font-family:"Roboto Flex",sans-serif;
+    }
+    .about-para{
+      font-size:16px;
+      line-height:25.67px;
+      color:#727272;
+      font-family:"Plus Jakarta Sans",sans-serif;
+      margin-bottom:1rem;
+    }
+    .collab-section{
+      background:#F3F3F3;
+      padding:80px 0;
+    }
+    .collab-label{
+      font-family:"Roboto Flex",sans-serif;
+      font-weight:500;
+      font-size:20.28px;
+      line-height:20.28px;
+      letter-spacing:2.03px;
+      text-transform:uppercase;
+      opacity:.9;
+    }
+    .collab-title{
+      font-family:"Roboto Flex",sans-serif;
+      font-weight:600;
+      font-size:40px;
+      line-height:51.35px;
+      text-align:center;
+      margin:13px 0 30px;
+    }
+    .collab-subtitle{
+      font-family:"Plus Jakarta Sans",sans-serif;
+      font-weight:400;
+      font-size:16px;
+      line-height:25.67px;
+      text-align:center;
+      color:#727272;
+      max-width:831px;
+      margin:10px auto;
+    }
+    .collab-layout{
+      position:relative;
+      max-width:900px;
+      margin:40px auto 0;
+      aspect-ratio:16/9;
+    }
+    .collab-earth{
+      position:absolute;
+      top:50%;
+      left:50%;
+      width:661px;
+      transform:translate(-50%,-50%);
+      border-radius:50%;
+    }
+    .logo-card{
+      position:absolute;
+      background:#ffffff;
+      width:192px;
+      height:87px;
+      border-radius:10px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      box-shadow:0 10px 25px rgba(0,0,0,.06);
+    }
+    .logo-card img{
+      max-width:100%;
+      max-height:60px;
+      object-fit:contain;
+    }
+    .logo-pos-1{top:17%;left:7%;}
+    .logo-pos-2{top:50%;left:-3%;}
+    .logo-pos-3{top:78%;left:7%;}
+    .logo-pos-4{top:17%;right:6%;}
+    .logo-pos-5{top:50%;right:-3%;}
+    .logo-pos-6{top:78%;right:6%;}
+
+    @media (max-width:768px){
+      .programs-title{font-size:1.6rem;}
+      .collab-layout{
+       max-width:100%;
+       aspect-ratio:auto;
+      }
+      .collab-earth{
+        position:static;
+        transform:none;
+        width:220px;
+        margin:0 auto 20px;
+        display:block;
+      }
+      .logo-card{
+        position:static;
+        margin:8px auto;
+        width:80%;
+      }
+    }
+/* ===========================
+   PLACEMENT SECTION
+=========================== */
+
+.placement-section {
+  background: #fafafa;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.placement-section .placement-wrapper {
+  padding: 40px 10px 50px;
+  position: relative;
+}
+
+/* Right side grey circle */
+.placement-section .placement-circle {
+  position: absolute;
+  top: 50px;
+  right: 70px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #d9d9d9;
+  z-index: 0;
+}
+
+/* Heading */
+.placement-section .placement-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.placement-section .placement-tag-icon {
+  height: 18px;
+}
+
+.placement-section .placement-heading {
+  text-align: center;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+/* LEFT IMAGE */
+.placement-section .placement-img {
+  width: 140%;
+  margin-top: 20px;
+  border-radius: 18px;
+  margin-left: -40px; /* Move slightly left */
+  display: block;
+}
+
+/* TESTIMONIAL CARD */
+.placement-section .testimonial-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 40px;
+  margin-top: 20px;
+  border: 1px solid #d9d9d9;
+  overflow: hidden;
+  height: 245px;
+  width: 100%;
+  max-width: 900px;
+  margin-left: 65px; /* Move right */
+}
+
+/* Yellow background */
+.placement-section .yellow-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  border-radius: 0 22px 22px 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.placement-section .yellow-layer {
+  position: absolute;
+  width: 110%;
+  height: 120%;
+  object-fit: contain;
+}
+
+.placement-section .yellow-layer.light {
+  z-index: 2;
+  right: 10px;
+}
+
+.placement-section .yellow-layer.dark {
+  z-index: 3;
+  left: 10px;
+}
+
+/* Quote Icon */
+.placement-section .quote-bg {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 200px;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+/* ========== FIXED TEXT BLOCK WIDTH (NO OVERLAY) ========== */
+.placement-section .testimonial-body {
+  position: relative;
+  z-index: 4;
+  max-width: 63%;   /* ← FIXED WIDTH */
+}
+
+/* Text */
+.placement-section .testimonial-text {
+  color: #6b6b6b;
+  line-height: 2;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.placement-section .student-name {
+  color: #034833;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.placement-section .student-role {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Student Photo */
+.placement-section .student-photo {
+  position: absolute;
+  right: 25px;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 160px;
+  height: 160px;
+  border-radius: 79.5px;
+  border: 3px solid #ffffff;
+  z-index: 5;
+  object-fit: cover;
+}
+
+/* Salary Badge */
+.placement-section .salary-badge {
+  position: absolute;
+  right: 25px;
+  bottom: 10px;
+  background: #ffffff;
+  width: 190px;
+  height: 52px;
+  padding: 0 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 14px;
+  z-index: 6;
+}
+
+.placement-section .salary-badge img {
+  width: 101px;
+  height: 27px;
+}
+
+/* STATS BOX */
+.placement-section .stats-box {
+  margin-top: 25px;
+  background: #d62828;
+  color: #ffffff;
+  border-radius: 18px;
+  padding: 35px 20px;
+  width: 100%;
+  max-width: 900px;
+  margin-left: 65px; /* align with testimonial card */
+}
+
+.placement-section .stats-title {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.placement-section .stats-box p {
+  font-size: 14px;
+}
+
+/* ======================================
+   RESPONSIVE FIXES
+====================================== */
+
+@media (max-width: 991.98px) {
+    .placement-circle{
+        display: none;
+    }
+  .placement-section .placement-img {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .placement-section .testimonial-card,
+  .placement-section .stats-box {
+    margin-left: 0; /* center on mobile */
+  }
+
+  .placement-section .testimonial-body {
+    max-width: 100%; /* full width on mobile */
+  }
+
+  .placement-section .student-photo {
+    right: 24px;
+    width: 130px;
+    height: 130px;
+  }
+
+  .placement-section .salary-badge {
+    right: 24px;
+  }
+
+  .placement-section .stats-title {
+    font-size: 34px;
+  }
+}
+
+
+@media (max-width: 767.98px) {
+
+
+      .placement-circle{
+        display: none;
+    }
+
+  .placement-section .yellow-right {
+    display: none;
+  }
+
+  .placement-section .testimonial-card {
+    padding: 30px;
+    height: auto;
+  }
+
+  .placement-section .student-photo {
+    margin-left: 0px;
+    transform: none;
+    margin: 10px auto 30px;
+  }
+
+  .placement-section .salary-badge {
+    position: static;
+   margin-left: 230px;
+  }
+
+  .placement-section .stats-box {
+    padding: 20px 10px;
+  }
+
+  .placement-section .stats-title {
+    font-size: 20px;
+  }
+}
+
+
+          
+        .marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.track {
+  display: flex;
+  width: max-content;
+  gap: 14px;
+}
+.marquee img {
+  width: 240px;
+  height: 100px;
+  object-fit: contain;
+  background: #FBFBFB;
+  padding: 12px 18px;
+  border: 1px solid #D9D9D9;
+  border-radius: 14px;
+}
+.marquee.left .track {
+  animation: scrollLeft 18s linear infinite;
+}
+.marquee.right .track {
+  animation: scrollRight 18s linear infinite;
+}
+@keyframes scrollLeft {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-33.33%); }
+}
+
+@keyframes scrollRight {
+  from { transform: translateX(-33.33%); }
+  to   { transform: translateX(0); }
+}
+@media (max-width: 768px) {
+  .marquee img {
+    width: 95px;
+    height: 55px;
+  }
+}
+  .mbu-red-box {
+  background: #d71920;
+  border-radius: 28px;
+  padding: 20px 30px 70px;
+}
+
+.mbu-facilities-tag {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+.mbu-facilities-heading {
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.mbu-img-box {
+  border-radius: 18px;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  bottom: 60px;
+}
+
+.mbu-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .mbu-facilities-heading {
+    font-size: 22px;
+  }
+
+  .mbu-img-box {
+    height: 180px;
+  }
+}
+ .campus-wrapper {
+      position: relative;
+      max-width: 1216px;
+      margin-top: 200px;
+      margin-bottom: 200px;
+    }
+
+    .campus-redbox {
+      background:#D71921;
+      height: 440px;
+      border-radius: 16px;
+      padding: 160px 40px;
+      text-align: center;
+      color: white;
+      position: relative;
+      z-index: 1;
+      overflow: visible; /* ✅ allows images to overflow */
+    }
+
+    .campus-img-row {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      z-index: 2;
+    }
+
+    .campus-img-top {
+      top: 0;
+      transform: translateY(-50%);
+    }
+
+    .campus-img-bottom {
+      bottom: 0;
+      transform: translateY(50%);
+    }
+
+    .campus-img {
+      width: 220px;
+      max-width: 289px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 10px;
+      
+    }
+    .campus-subtitle {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 2.03px;
+}
+
+      .object2-img {
+  width: 26px;      
+  height: 26px;
+  vertical-align: middle;
+ 
+}
+
+ @media (max-width: 768px) {
+
+  /* ✅ Hide the 3rd image on mobile */
+  .campus-img-row .col-auto:nth-child(3) {
+    display: none;
+  }
+
+  /* ✅ Keep two images centered */
+  .campus-img-row {
+    justify-content: center !important;
+  }
+
+  .campus-img {
+    height: 140px;
+    width: 140px;
+  }
+
+  /* ✅ Maintain perfect overlay */
+  .campus-img-top {
+    top: 0;
+    transform: translateY(-45%);
+  }
+
+  .campus-img-bottom {
+    bottom: 0;
+    transform: translateY(45%);
+  }
+
+  .campus-redbox {
+    padding: 140px 16px;
+  }
+  .campus-subtitle{
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  white-space: nowrap;   /* ✅ Forces single line */
+}
+
+.object2-img{
+  width: 18px;
+  height: 18px;
+}
+
+}
+
+ .faq-section{
+      padding:70px 0;
+      background-color: #F7F7F7;
+    }
+
+    .faq-label{
+      font-family:"Roboto Flex",sans-serif;
+      font-size:20px;
+      letter-spacing:2.03px;
+      text-transform:uppercase;
+      font-weight:500;
+      margin-bottom:16px;
+    }
+
+    .faq-title{
+      font-family:"Roboto Flex",sans-serif;
+      font-size:40px;
+      font-weight:600;
+      margin-bottom:40px;
+    }
+
+    /* Accordion wrapper */
+    .faq-accordion .accordion-item{
+      border:0;
+      border-radius:12px;
+      overflow:hidden;
+      max-width:807px;
+      width:100%;
+      margin:0 auto 25px;
+      background:transparent;
+    }
+
+    .faq-accordion .accordion-button{
+      background:#F6C617;
+      color:#000;
+      font-family:"Plus Jakarta Sans",sans-serif;
+      font-weight:500;
+      font-size:15px;
+      padding:0 20px;
+      min-height:54px;
+      display:flex;
+      align-items:center;
+      border-radius:12px;
+      transition:background .2s,color .2s;
+    }
+
+    /* Active (open) state */
+    .faq-accordion .accordion-button:not(.collapsed){
+      background:#D71921!important;
+      color:#fff!important;
+    }
+
+    /* remove bootstrap focus shadow */
+    .faq-accordion .accordion-button:focus,
+    .faq-accordion .accordion-button:active{
+      box-shadow:none!important;
+      outline:none!important;
+    }
+
+    /* Remove default arrow */
+    .faq-accordion .accordion-button::after{
+      display:none!important;
+    }
+
+    /* Custom arrow using background images */
+    .faq-arrow{
+      width:28px;
+      height:28px;
+      margin-left:auto;
+      background-image:url("./image/drop2.png"); /* default */
+      background-size:contain;
+      background-repeat:no-repeat;
+      background-position:center;
+      transition:transform .25s, background-image .25s;
+    }
+
+    .faq-accordion .accordion-button:not(.collapsed) .faq-arrow{
+      background-image:url("./image/drop1.png");
+      transform:rotate(180deg);
+    }
+
+    .faq-body{
+      background:#FFF7DA;
+      font-family:"Plus Jakarta Sans",sans-serif;
+      font-size:15px;
+      padding:20px 26px;
+      text-align:left;
+    }
+
+    @media (max-width:768px){
+      .faq-title{font-size:30px;}
+      .faq-label{font-size:16px;margin-bottom:8px;}
+      .faq-body{font-size:14px;padding:16px 18px;}
+    }
+
+      .mbuHeroWrap {
+      position: relative;
+      border-radius: 25px;
+      overflow: hidden;
+    }
+
+    .mbuHeroImg {
+      width: 100%;
+      height: 382px;
+      object-fit: cover;
+    }
+
+    .mbuHeroOverlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.071));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 30px;
+    }
+
+    .mbuHeroTitle {
+      font-weight:600;
+      font-size: 40px;
+      line-height: 51.35px;
+    }
+
+    .mbuHeroBtn {
+      background: #D71921;
+      border: none;
+      font-weight: 600;
+      padding: 10px 25px;
+      margin-top: 15px;
+    }
+
+    /* ===== CONTACT STRIP ===== */
+   .mbuContactStrip {
+    
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 2px solid #F5F5F5;   /* ✅ straight top line */
+}
+
+
+    .mbuContactItem {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-weight: 400;
+      font-size: 15px;
+      margin-bottom: 10px;
+      margin-left: 320px;
+      line-height: 25.24px;
+    }
+
+    .mbuContactIcon {
+      width: 20px;
+      height: 20px;
+      fill: #F6C617;
+      
+    }
+
+    /* ===== FOOTER BAR ===== */
+    .mbuFooterBar {
+      background: #D71921;
+      color: white;
+      text-align: center;
+      padding: 12px 10px;
+      font-size: 14px;
+    }
+
+    /* ===== MOBILE ===== */
+    @media (max-width: 768px) {
+      .mbuHeroImg {
+        height: 300px;
+      }
+
+      .mbuHeroTitle {
+        font-size: 1.5rem;
+      }
+
+      .mbuMobileCenter {
+        text-align: center;
+      }
+    }
+
+       .video-section {
+      position: relative;
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+      border-radius: 20px;
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+      background: #000;
+    }
+
+    .video-section iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .video-overlay-text {
+      position: absolute;
+      bottom: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+     background: linear-gradient(180deg, #FFFFFF 0%, #FEF3CD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+;
+;
+      font-size: 67px;
+      font-weight: 500;
+      text-align: center;
+      width: 100%;
+      padding: 0 15px;
+    
+      pointer-events: none;
+    }
+
+    /* ✅ ADMISSION SECTION */
+    .admission-title {
+      text-align: center;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 51px;
+      margin: 60px 0 40px;
+    }
+
+    .steps-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .step-box {
+  text-align: center;
+  width: 150px;          /* ✅ Same width for all */
+  height: 180px;         /* ✅ Same height for all */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.step-box img {
+  width: 70px;           /* ✅ Same icon size */
+  height: 70px;          /* ✅ Forces square */
+  object-fit: contain;
+
+  background: #D71921;  
+  border: 1.12px solid #000;
+  border-radius: 4.46px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.step-box h6 {
+  font-size: 22.62px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: 2.26PX;
+}
+
+.step-box p {
+  font-size: 17.85px;
+  line-height: 21px;
+  font-weight: 600;
+  margin-top:20px;
+  min-height: 32px;
+   /* ✅ Keeps text area equal even if content changes */
+}
+
+
+    .arrow-img {
+      width: 60px;
+      margin-bottom: 40px;
+
+    }
+
+    /* ✅ MOBILE RESPONSIVE */
+    @media (max-width: 768px) {
+      .video-overlay-text {
+        font-size: 20px;
+        bottom: 15px;
+      }
+
+      .steps-wrapper {
+        gap: 6px;
+      }
+
+      .step-box {
+        width: 120px;
+      }
+
+      .arrow-img {
+        display: none;
+      }
+      
+.step-box p{
+  font-size:16px;
+
+}
+    }
+  </style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg d-flex justify-content-between align-items-center">
+
+  <div class="d-flex align-items-center gap-2">
+    <img src="./image/logo.png" height="88">
+  </div>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mbuMenu">
+    ☰
+  </button>
+  <div class="collapse navbar-collapse justify-content-center" id="mbuMenu">
+    <ul class="navbar-nav gap-3">
+      <li class="nav-item"><a class="nav-link text-dark" href="#">Why Study Here</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="#">Courses Offered</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="#">Placements</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="#">Admission Process</a></li>
+    </ul>
+  </div>
+
+  <button class="btn btn-danger px-4 d-none d-lg-block">Admission Open</button>
+</nav>
+<section class="hero-section container-fluid">
+
+  <div class="row align-items-center">
+    <div class="col-lg-7">
+      <div class="hero-badge">34 Years of Unwavering Trust, 1 Universe of Possibilities</div>
+        <h1 class="content">
+  Pursue Your Passions<br>
+  Dream 
+  <img src="./image/object.png" class="object-img"> 
+  Believe 
+  <img src="./image/object.png" class="object-img"> 
+  Achieve
+</h1>
+<p class="lorem mt-3">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet cras nunc.<br>consectetur adipiscing elit. Sed sit amet cras nunc.
+      </p>
+    </div>
+    <div class="col-lg-5">
+      <div class="hero-form">       
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ranking-strip container-fluid">
+  <div class="row text-center align-items-center">
+
+    <div class="col-lg-3 ">Rankings And Accreditations</div>
+    <div class="col">
+  <img src="./image/img1.png" class="rank-icon">
+</div>
+
+<div class="col">
+  <img src="./image/img2.png" class="rank-icon">
+</div>
+
+<div class="col">
+  <img src="./image/img3.png" class="rank-icon">
+</div>
+
+<div class="col">
+  <img src="./image/img4.png" class="rank-icon">
+</div>
+ </div>
+</section>
+<section class="container">
+  <small class="choose" >WHY CHOOSE US <img src="./image/object.png" class="object-img"></small>
+  <div class="row align-items-center mt-2">
+    <div class="col-lg-6">
+      <h2 class="text-content">A University That Prepares <br>You for the Real World</h2>
+    </div>
+    <div class="col-lg-6">
+      <p class="text-dark-emphasis">
+        At MBU, education goes beyond classrooms into careers, research, and leadership. 
+        Students gain global exposure, advanced facilities, and industry-driven learning.
+        With 110+ recruiters, we prepare graduates to thrive anywhere in the world.
+      </p>
+    </div>
+  </div>
+  <div class="row mt-5 align-items-center">
+    <div class="col-lg-4">
+
+      <div class="feature-card">
+        <img src="./image/trusted.png">
+        <h6 class="fw-bold mt-2">Trusted Legacy in Education</h6>
+        <p class="mt-1">34+ years of shaping leaders and innovators across multiple disciplines.</p>
+      </div>
+
+      <div class="feature-card">
+        <img src="./image/global.png">
+        <h6 class="fw-bold mt-2">Global Opportunities</h6>
+        <p class="mt-1"> India’s first university to offer a Joint Degree Program with Penn State University (QS Top 100).</p>
+      </div>
+
+      <div class="feature-card">
+        <img src="./image/container.png">
+        <h6 class="fw-bold mt-2">Strong Placement Track</h6>
+        <p class="mt-1">110+ recruiters, highest package up to ₹60 LPA, and dedicated career support.</p>
+      </div>
+
+    </div>
+
+    <div class="col-lg-4 text-center position-relative ">
+      <img src="./image/man.png" class="leader-img">
+      <div class="badge-years">34+ Years of Excellence</div>
+    </div>
+    <div class="col-lg-4">
+
+      <div class="feature-card">
+        <img src="./image/trusted.png">
+        <h6 class="fw-bold mt-2"></h6>Strong Placement Track Record
+        <p  class="mt-1">110+ recruiters, highest package up to ₹60 LPA, and dedicated career support.</p>
+      </div>
+
+      <div class="feature-card">
+        <img src="./image/global.png">
+        <h6 class="fw-bold mt-2">World-Class Infrastructure</h6>
+        <p class="mt-1">Advanced labs, digital learning facilities, a central library with 4,500+ sq.m, and vibrant campus life.</p>
+      </div>
+      <div class="feature-card">
+        <img src="./image/container.png">
+        <h6 class="fw-bold mt-2">Diverse Programs</h6>
+        <p class="mt-1">50+ UG, PG & PhD programs across Engineering, Business, Computer Applications and Sciences.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<section class="programs-section">
+    <div class="container-fluid">
+      <div class="text-center mb-4">
+        <div class="d-flex justify-content-center align-items-center gap-2">
+          <span class="fw-semibold programs-label">Programs Offered</span>
+          <img src="./image/object2.png" width="18" />
+        </div>
+        <h2 class="fw-bold programs-title">Discover the Right Program for Your Passion and Ambition</h2>
+      </div>
+      <div class="programs-inner">
+        <div class="row g-4">
+          <div class="col-md-5 d-flex justify-content-center">
+            <img src="image/Rectangle.png" class="programs-image" />
+          </div>
+          <div class="col-md-7">
+            <div class="programs-right">
+              <div class="accordion" id="accordionPrograms">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#computing">
+                      School of Computing
+                      <span class="icon-minus ms-auto"></span>
+                    </button>
+                  </h2>
+                  <div id="computing" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                      <ul class="programs-list list-unstyled">
+                        <li>B.Tech – Computer Science & Engineering (AI & ML)</li>
+                        <li>B.Tech – Computer Science & Engineering (AI & DS)</li>
+                        <li>B.Tech – Computer Science & Engineering (DevOps)</li>
+                        <li>B.Tech – Computer Science & Engineering (Cloud Computing)</li>
+                        <li>B.Tech – Computer Science & Engineering (SAP/ABAP in Academic)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#engineering">
+                      School of Engineering
+                      <span class="icon-plus ms-auto"></span>
+                    </button>
+                  </h2>
+                  <div id="engineering" class="accordion-collapse collapse">
+                    <div class="accordion-body">Add programs here.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#commerce1">
+                      School of Commerce and Management
+                      <span class="icon-plus ms-auto"></span>
+                    </button>
+                  </h2>
+                  <div id="commerce1" class="accordion-collapse collapse">
+                    <div class="accordion-body">Add programs here.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#commerce2">
+                      School of Commerce and Management
+                      <span class="icon-plus ms-auto"></span>
+                    </button>
+                  </h2>
+                  <div id="commerce2" class="accordion-collapse collapse">
+                    <div class="accordion-body">Add programs here.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-5">
+          <img src="image/Image.png" class="about-single-img" />
+        </div>
+        <div class="col-md-7">
+          <div class="about-text-block">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <span class="about-label fw-bold">About Us</span>
+              <img src="./image/object.png" width="18" />
+            </div>
+            <h2 class="about-title fw-bold">Empowering Students,<br>Inspiring Futures</h2>
+            <p class="about-para">
+              At Mohan Babu University (MBU), education is more than academics—it’s about nurturing leaders, innovators, and changemakers. With a proud legacy of 33+ years, MBU has transformed into a hub of world-class learning, research, and industry collaboration.
+            </p>
+            <p class="about-para mb-0">
+              We believe in providing students with not just knowledge, but also the right skills, values, and exposure to thrive in a global environment. From cutting-edge programs in Engineering, Business, Computer Applications, Agriculture, and Sciences to our prestigious Joint Degree with Penn State University, MBU stands as a gateway to opportunities worldwide.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="collab-section">
+    <div class="container text-center">
+      <p class="collab-label mb-1">
+        Our Collaboration <img src="./image/object.png" width="16">
+      </p>
+      <h2 class="collab-title fw-bold">Global Academic Collaborations</h2>
+      <p class="collab-subtitle">
+        International collaborations with Top 100 Global Universities for Student Exchange and Study Abroad Programs
+      </p>
+      <div class="collab-layout">
+        <img src="image/earth.png" class="collab-earth" alt="Earth">
+        <div class="logo-card logo-pos-1">
+          <img src="image/logo-penn.png" alt="Penn State">
+        </div>
+        <div class="logo-card logo-pos-2">
+          <img src="image/logo-wisconsin.png" alt="Wisconsin">
+        </div>
+        <div class="logo-card logo-pos-3">
+          <img src="image/logo-rwth.png" alt="RWTH Aachen">
+        </div>
+        <div class="logo-card logo-pos-4">
+          <img src="image/logo-wayne.png" alt="University 1">
+        </div>
+        <div class="logo-card logo-pos-5">
+          <img src="image/logo-vcu.png" alt="VCU">
+        </div>
+        <div class="logo-card logo-pos-6">
+          <img src="image/logo-uni1.png" alt="Wayne State">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="placement-section">
+    <div class="container placement-wrapper">
+      <!-- decorative circle -->
+      <div class="placement-circle"></div>
+
+      <!-- Heading Section -->
+      <div class="placement-tag">
+        <span>PLACEMENT HIGHLIGHTS</span>
+        <img src="image/object.png" alt="paper rocket" class="placement-tag-icon" />
+      </div>
+      <h2 class="placement-heading">Proven Track Record of Excellence</h2>
+
+      <div class="row g-9 mt-2 align-items-center">
+        <!-- LEFT IMAGE -->
+        <div class="col-lg-3">
+          <img src="image/placement-students.png" class="placement-img" />
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="col-lg-9 d-flex flex-column align-items-start ">
+          <div class="testimonial-card">
+            <!-- yellow bg -->
+            <div class="yellow-right">
+              <img src="image/yellow-bg1.png" class="yellow-layer light" />
+              <img src="image/yellow-bg2.png" class="yellow-layer dark" />
+            </div>
+
+            <!-- quote -->
+            <img src="image/quote-big.png" class="quote-bg" />
+
+            <!-- text -->
+            <div class="testimonial-body">
+              <p class="testimonial-text">
+                Leverage agile frameworks to provide a robust synopsis for strategy foster.
+                Leverage agile frameworks to provide a robust synopsis for go for strategy foster.
+              </p>
+
+              <p class="student-name">Pavitra Reddy</p>
+              <p class="student-role">MBA Student</p>
+            </div>
+
+            <!-- student photo -->
+            <img src="image/student.png" class="student-photo" />
+
+            <!-- company + salary -->
+            <div class="salary-badge">
+              <img src="image/yugabytedb.png" />
+              ₹44 LPA
+            </div>
+          </div>
+
+          <!-- stats bar -->
+          <div class="stats-box">
+            <div class="row text-center">
+              <div class="col-6 col-md-3 mb-3 mb-md-0">
+                <div class="stats-title">10k+</div>
+                <p>Top Recruiters On <br />Campus</p>
+              </div>
+              <div class="col-6 col-md-3 mb-3 mb-md-0">
+                <div class="stats-title">20+</div>
+                <p>Highest Salary <br />Package</p>
+              </div>
+              <div class="col-6 col-md-3 mb-3 mb-md-0">
+                <div class="stats-title">5k+</div>
+                <p>Placement <br />Programs</p>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stats-title">100+</div>
+                <p>Successful Alumni <br />Worldwide</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container-fluid py-5 bg-white overflow-hidden">
+
+  <!-- LEFT TO RIGHT -->
+  <div class="row mb-4">
+    <div class="col-12">
+      <div class="marquee left">
+        <div class="track">
+          <img src="./image/image (1).png">
+          <img src="./image/image (2).png">
+          <img src="./image/image (3).png">
+          <img src="./image/image (4).png">
+          <img src="./image/image (5).png">
+
+          <img src="./image/image (1).png">
+          <img src="./image/image (2).png">
+          <img src="./image/image (3).png">
+          <img src="./image/image (4).png">
+          <img src="./image/image (5).png">
+
+          <img src="./image/image (1).png">
+          <img src="./image/image (2).png">
+          <img src="./image/image (3).png">
+          <img src="./image/image (4).png">
+          <img src="./image/image (5).png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT TO LEFT -->
+  <div class="row">
+    <div class="col-12">
+      <div class="marquee right">
+        <div class="track">
+          <img src="./image/image (6).png">
+          <img src="./image/image (7).png">
+          <img src="./image/image (8).png">
+
+          <img src="./image/image (6).png">
+          <img src="./image/image (7).png">
+          <img src="./image/image (8).png">
+
+          <img src="./image/image (6).png">
+          <img src="./image/image (7).png">
+          <img src="./image/image (8).png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <div class="container campus-wrapper  py-4">
+
+    <!-- ✅ RED BACK BOX -->
+    <div class="campus-redbox">
+
+      <!-- ✅ TOP IMAGES (INSIDE RED BOX FOR PERFECT OVERFLOW) -->
+      <div class="row justify-content-center campus-img-row campus-img-top g-2">
+        <div class="col-auto"><img src="./image/std1.png" class="campus-img"></div>
+        <div class="col-auto"><img src="./image/std2.png" class="campus-img"></div>
+        <div class="col-auto"><img src="./image/std3.png" class="campus-img"></div>
+      </div>
+
+      <!-- ✅ CENTER TEXT -->
+     <p class="mb-2 text-uppercase campus-subtitle">
+  World-Class Facilities 
+  <img src="./image/object2.png" class="object2-img">
+</p>
+
+      <h2 class="fw-bold mt-4">
+        A Campus Built to Inspire Learning, Innovation, and Growth
+      </h2>
+
+      <!-- ✅ BOTTOM IMAGES -->
+      <div class="row justify-content-center campus-img-row campus-img-bottom g-2">
+        <div class="col-auto"><img src="./image/std4.png" class="campus-img"></div>
+        <div class="col-auto"><img src="./image/std5.png" class="campus-img"></div>
+        <div class="col-auto"><img src="./image/std6.png" class="campus-img"></div>
+      </div>
+
+    </div>
+
+  </div>
+  
+  <!-- ✅ YOUTUBE VIDEO WITH OVERLAY -->
+  <section class="container my-5">
+    <div class="video-section">
+
+      <!-- ✅ REPLACE VIDEO ID BELOW -->
+      <iframe 
+        src="https://www.youtube.com/embed/ABC123XYZ?autoplay=1&mute=1&rel=0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+      </iframe>
+
+      <!-- ✅ TEXT OVERLAY -->
+      <div class="video-overlay-text">
+        Dream Big and Achieve Bigger
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ✅ ADMISSION PROCESS SECTION -->
+  <section class="container mb-5">
+    <h2 class="admission-title">Admission Process Section</h2>
+
+    <div class="steps-wrapper">
+
+      <!-- ✅ STEP 1 -->
+      <div class="step-box">
+         <h6 class="step-text">STEP 1</h6>
+        <img src="./image/step1.png">
+       
+        <p>Register Yourself</p>
+      </div>
+
+      <img src="./image/arrow.png" class="arrow-img">
+
+      <!-- ✅ STEP 2 -->
+      <div class="step-box">
+         <h6>STEP 2</h6>
+        <img src="./image/step2.png">
+       
+        <p>Verify Mobile No. & Email-ID</p>
+      </div>
+
+      <img src="./image/arrow.png" class="arrow-img">
+
+      <!-- ✅ STEP 3 -->
+      <div class="step-box">
+        <h6>STEP 3</h6>
+        <img src="./image/step3.png">
+        
+        <p>Fill Application Form</p>
+      </div>
+
+      <img src="./image/arrow.png" class="arrow-img">
+
+      <!-- ✅ STEP 4 -->
+      <div class="step-box">
+        <h6>STEP 4</h6>
+        <img src="./image/step4.png">
+        
+        <p>Upload Required Documents</p>
+      </div>
+
+      <img src="./image/arrow.png" class="arrow-img">
+
+      <!-- ✅ STEP 5 -->
+      <div class="step-box">
+        <h6 class="step-text">STEP 5</h6>
+        <img src="./image/step5.png">
+        
+        <p>Submit Application Form</p>
+      </div>
+
+    </div>
+  </section>
+<section class="faq-section">
+  <div class="container text-center">
+
+    <p class="faq-label">
+      FAQ <img src="./image/object.png" width="16" alt="">
+    </p>
+
+    <h2 class="faq-title">Frequently asked questions</h2>
+
+    <div class="accordion faq-accordion" id="faqAccordion">
+
+      <!-- FAQ 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#faq1">
+            1. What are the eligibility criteria for B.Tech admission at Mohan Babu University?
+            <span class="faq-arrow"></span>
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body faq-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc.
+            Duis egestas ac ante sed tincidunt. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#faq2">
+            2. Does Mohan Babu University offer scholarships? What are the criteria?
+            <span class="faq-arrow"></span>
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body faq-body">
+            Yes, MB University offers various merit-based and need-based scholarships,
+            subject to eligibility criteria decided by the institution.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#faq3">
+            3. What is the placement scenario at Mohan Babu University?
+            <span class="faq-arrow"></span>
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body faq-body">
+            Placements are strong with top recruiters visiting the campus and students
+            placed across product, IT services, consulting and core companies.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#faq4">
+            4. Is Mohan Babu University a private or government institution?
+            <span class="faq-arrow"></span>
+          </button>
+        </h2>
+        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body faq-body">
+            Mohan Babu University is a private university established as per the
+            relevant state legislation and approved by the competent authorities.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<div class="container my-4">
+
+  <!-- ✅ HERO BANNER -->
+  <div class="mbuHeroWrap">
+    <img src="./image/banner.png" class="mbuHeroImg" alt="MBU Banner">
+
+    <div class="mbuHeroOverlay">
+      <div>
+        <h1 class="mbuHeroTitle">
+          Take the First Step Toward Your<br>Dream Career!
+        </h1>
+        <button class="btn mbuHeroBtn text-white">Apply Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ CONTACT SECTION -->
+  <div class="mbuContactStrip mt-4">
+    <div class="row align-items-center">
+
+      <!-- LOGO -->
+      <div class="col-md-6 mb-3 mb-md-0 mbuMobileCenter">
+        <img src="./image/logo.png" width="260" alt="MBU Logo">
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div class="col-md-6">
+
+        <!-- PHONE -->
+        <div class="mbuContactItem">
+          <svg class="mbuContactIcon" viewBox="0 0 24 24">
+            <path d="M6.6 10.8c1.4 2.7 3.9 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.6.6 4 .6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.5 21 3 13.5 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.4.2 2.8.6 4 .1.4 0 .8-.3 1.1l-2.2 2.7z"/>
+          </svg>
+          +91 9469465946
+        </div>
+
+        <!-- EMAIL -->
+        <div class="mbuContactItem">
+          <svg class="mbuContactIcon" viewBox="0 0 24 24">
+            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+          admissions@mbu.asia
+        </div>
+
+        <!-- LOCATION -->
+        <div class="mbuContactItem">
+          <svg class="mbuContactIcon" viewBox="0 0 24 24">
+            <path d="M12 2C8.1 2 5 5.1 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z"/>
+          </svg>
+          Sree Sainath Nagar, Tirupati,<br>Chittoor (Dist), AP - 517102
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ✅ FOOTER -->
+<div class="mbuFooterBar">
+  © 2025 Mohan Babu University (MBU). All Rights Reserved.
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.querySelectorAll(".accordion-button").forEach(btn=>{
+      btn.addEventListener("click",()=>{
+        const icon=btn.querySelector("span:last-child");
+        setTimeout(()=>{
+          if(btn.classList.contains("collapsed")){
+            icon.classList.remove("icon-minus");
+            icon.classList.add("icon-plus");
+          }else{
+            icon.classList.remove("icon-plus");
+            icon.classList.add("icon-minus");
+          }
+        },200);
+      });
+    });
+  </script>
+</body>
+</html>
