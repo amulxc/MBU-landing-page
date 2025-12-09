@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Placement Section</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Roboto+Flex:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --bg-body: #fafafa;
+      --circle-bg: #d9d9d9;
+      --text-muted: #6b6b6b;
+      --name-color: #034833;
+      --card-border: #d9d9d9;
+      --stats-red: #d62828;
+      --white: #ffffff;
+    }
+
+    body {
+      background: var(--bg-body);
+      font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    .placement-wrapper {
+      padding: 40px 10px 50px;
+      position: relative;
+    }
+
+    /* big empty circle on right side */
+    .placement-circle {
+      position: absolute;
+      top: 50px;
+      right: 70px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: var(--circle-bg);
+      z-index: 0;
+    }
+
+    /* Heading & Subtitle */
+    .placement-tag {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      font-size: 20px;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 15px;
+    }
+
+    .placement-tag-icon {
+      height: 18px;
+      width: auto;
+    }
+
+    .placement-heading {
+      text-align: center;
+      font-family: "Roboto Flex", sans-serif;
+      font-size: 40px;
+      font-weight: 600;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 40px;
+    }
+
+    /* LEFT IMAGE */
+    .placement-img {
+      width: 88%;
+      margin-top: 20px;
+      border-radius: 18px;
+      margin-left: 40px;
+      display: block;
+    }
+
+    /* WHITE CARD */
+    .testimonial-card {
+      position: relative;
+      background: var(--white);
+      border-radius: 22px;
+      padding: 38px;
+      margin-top: 20px;
+      border: 1px solid var(--card-border);
+      overflow: hidden;
+    }
+
+    /* yellow area on right */
+    .yellow-right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 40%;
+      border-radius: 0 22px 22px 0;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .yellow-layer {
+      position: absolute;
+     
+      width: 100%;
+      height: 100%;
+      object-fit:contain; /* makes light card fit perfectly */
+    }
+
+    .yellow-layer.light {
+      z-index: 1;
+      right:10px
+    }
+
+    .yellow-layer.dark {
+      z-index: 2;
+      left: 20px;
+     
+    }
+
+    /* quote in center */
+    .quote-bg {
+      position: absolute;
+      top: 50%;
+      left: 35%;
+      width: 200px;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+    }
+
+    /* Text block */
+    .testimonial-body {
+      position: relative;
+      z-index: 4;
+      max-width: 65%;
+    }
+
+    .testimonial-text {
+      color: var(--text-muted);
+      line-height: 2;
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 18px;
+    }
+
+    .student-name {
+      color: var(--name-color);
+      font-weight: 700;
+      font-size: 22px;
+      margin-bottom: 4px;
+    }
+
+    .student-role {
+      margin-top: -5px;
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    /* Student Photo */
+    .student-photo {
+      position: absolute;
+      right: 40px;
+      top: 40%;
+      transform: translateY(-50%);
+      width: 160px;
+      height: 160px;
+      border-radius: 79.5px;
+      border: 3px solid var(--white);
+      z-index: 5;
+      object-fit: cover;
+    }
+
+    /* Salary badge */
+    .salary-badge {
+      position: absolute;
+      right: 30px;
+      bottom: 20px;
+      background: var(--white);
+      width: 195px;
+      height: 52px;
+      padding: 0 10px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      z-index: 6;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .salary-badge img {
+      width: 101px;
+      height: 27px;
+      object-fit: contain;
+    }
+
+    /* STATS RED BOX */
+    .stats-box {
+      margin-top: 25px;
+      width: 100%;
+      background: var(--stats-red);
+      color: var(--white);
+      border-radius: 18px;
+      padding: 35px 20px;
+      font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    .stats-title {
+      font-size: 42px;
+      font-weight: 700;
+    }
+
+    .stats-box p {
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--white);
+    }
+
+    /* ============ RESPONSIVE ============ */
+
+    @media (max-width: 991.98px) {
+      .placement-circle {
+        top: 20px;
+        right: 20px;
+        width: 90px;
+        height: 90px;
+      }
+
+      .placement-heading {
+        font-size: 32px;
+        margin-bottom: 24px;
+      }
+
+      .placement-img {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+      }
+
+      .testimonial-card {
+        margin-top: 0;
+        padding: 28px;
+      }
+
+      .testimonial-body {
+        max-width: 100%;
+      }
+
+      .student-photo {
+        right: 24px;
+        top: 42%;
+        width: 130px;
+        height: 130px;
+      }
+
+      .salary-badge {
+        right: 24px;
+      }
+
+      .stats-title {
+        font-size: 34px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .placement-wrapper {
+        padding: 24px 10px 40px;
+      }
+
+      .placement-circle {
+        display: none;
+      }
+
+      .placement-tag {
+        font-size: 14px;
+      }
+
+      .placement-heading {
+        font-size: 26px;
+      }
+
+      .testimonial-card {
+        padding: 20px;
+      }
+
+      .yellow-right {
+        display: none;
+      }
+
+      .testimonial-body {
+        max-width: 100%;
+      }
+
+      .student-photo {
+        position: static;
+        transform: none;
+        display: block;
+        margin: 20px auto 10px;
+      }
+
+      .salary-badge {
+        position: static;
+        margin: 0 auto;
+        margin-bottom: 10px;
+      }
+
+      .stats-box {
+        padding: 24px 12px;
+      }
+
+      .stats-title {
+        font-size: 28px;
+      }
+
+      .stats-box p {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container placement-wrapper">
+    <!-- decorative circle -->
+    <div class="placement-circle"></div>
+
+    <!-- Heading Section -->
+    <div class="placement-tag">
+      <span>PLACEMENT HIGHLIGHTS</span>
+      <img src="image/papericon.png" alt="paper rocket" class="placement-tag-icon" />
+    </div>
+    <h2 class="placement-heading">Proven Track Record of Excellence</h2>
+
+    <div class="row g-4 mt-2 align-items-center">
+      <!-- LEFT IMAGE -->
+      <div class="col-lg-4">
+        <img src="image/placement-students.png" class="placement-img" />
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="col-lg-8">
+        <div class="testimonial-card">
+          <!-- yellow bg -->
+          <div class="yellow-right">
+            <img src="image/yellow-bg1.png" class="yellow-layer light" />
+            <img src="image/yellow-bg2.png" class="yellow-layer dark" />
+          </div>
+
+          <!-- quote -->
+          <img src="image/quote-big.png" class="quote-bg" />
+
+          <!-- text -->
+          <div class="testimonial-body">
+            <p class="testimonial-text">
+              Leverage agile frameworks to provide a robust synopsis for strategy foster.
+              Leverage agile frameworks to provide a robust synopsis for go for strategy foster.
+            </p>
+
+            <p class="student-name">Pavitra Reddy</p>
+            <p class="student-role">MBA Student</p>
+          </div>
+
+          <!-- student photo -->
+          <img src="image/student.png" class="student-photo" />
+
+          <!-- company + salary -->
+          <div class="salary-badge">
+            <img src="image/yugabytedb.png" />
+            ₹44 LPA
+          </div>
+        </div>
+
+        <!-- stats bar -->
+        <div class="stats-box">
+          <div class="row text-center">
+            <div class="col-6 col-md-3 mb-3 mb-md-0">
+              <div class="stats-title">10k+</div>
+              <p>Top Recruiters On <br />Campus</p>
+            </div>
+            <div class="col-6 col-md-3 mb-3 mb-md-0">
+              <div class="stats-title">20+</div>
+              <p>Highest Salary <br />Package</p>
+            </div>
+            <div class="col-6 col-md-3 mb-3 mb-md-0">
+              <div class="stats-title">5k+</div>
+              <p>Placement <br />Programs</p>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="stats-title">100+</div>
+              <p>Successful Alumni <br />Worldwide</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
