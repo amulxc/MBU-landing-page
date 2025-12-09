@@ -1191,6 +1191,131 @@ html, body {
         text-align: center;
       }
     }
+
+       .video-section {
+      position: relative;
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+      border-radius: 20px;
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+      background: #000;
+    }
+
+    .video-section iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .video-overlay-text {
+      position: absolute;
+      bottom: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+     background: linear-gradient(180deg, #FFFFFF 0%, #FEF3CD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+;
+;
+      font-size: 67px;
+      font-weight: 500;
+      text-align: center;
+      width: 100%;
+      padding: 0 15px;
+    
+      pointer-events: none;
+    }
+
+    /* ✅ ADMISSION SECTION */
+    .admission-title {
+      text-align: center;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 51px;
+      margin: 60px 0 40px;
+    }
+
+    .steps-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .step-box {
+  text-align: center;
+  width: 150px;          /* ✅ Same width for all */
+  height: 180px;         /* ✅ Same height for all */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.step-box img {
+  width: 70px;           /* ✅ Same icon size */
+  height: 70px;          /* ✅ Forces square */
+  object-fit: contain;
+
+  background: #D71921;  
+  border: 1.12px solid #000;
+  border-radius: 4.46px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.step-box h6 {
+  font-size: 22.62px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: 2.26PX;
+}
+
+.step-box p {
+  font-size: 17.85px;
+  line-height: 21px;
+  font-weight: 600;
+  margin-top:20px;
+  min-height: 32px;
+   /* ✅ Keeps text area equal even if content changes */
+}
+
+
+    .arrow-img {
+      width: 60px;
+      margin-bottom: 40px;
+
+    }
+
+    /* ✅ MOBILE RESPONSIVE */
+    @media (max-width: 768px) {
+      .video-overlay-text {
+        font-size: 20px;
+        bottom: 15px;
+      }
+
+      .steps-wrapper {
+        gap: 6px;
+      }
+
+      .step-box {
+        width: 120px;
+      }
+
+      .arrow-img {
+        display: none;
+      }
+      
+.step-box p{
+  font-size:16px;
+
+}
+    }
   </style>
 </head>
 
@@ -1617,6 +1742,81 @@ html, body {
 
   </div>
   
+  <!-- ✅ YOUTUBE VIDEO WITH OVERLAY -->
+  <section class="container my-5">
+    <div class="video-section">
+
+      <!-- ✅ REPLACE VIDEO ID BELOW -->
+      <iframe 
+        src="https://www.youtube.com/embed/ABC123XYZ?autoplay=1&mute=1&rel=0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+      </iframe>
+
+      <!-- ✅ TEXT OVERLAY -->
+      <div class="video-overlay-text">
+        Dream Big and Achieve Bigger
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ✅ ADMISSION PROCESS SECTION -->
+  <section class="container mb-5">
+    <h2 class="admission-title">Admission Process Section</h2>
+
+    <div class="steps-wrapper">
+
+      <!-- ✅ STEP 1 -->
+      <div class="step-box">
+         <h6 class="step-text">STEP 1</h6>
+        <img src="./image/step1.png">
+       
+        <p>Register Yourself</p>
+      </div>
+
+      <img src="./image/arrow.png" class="arrow-img">
+
+      <!-- ✅ STEP 2 -->
+      <div class="step-box">
+         <h6>STEP 2</h6>
+        <img src="./image/step2.png">
+       
+        <p>Verify Mobile No. & Email-ID</p>
+      </div>
+
+      <img src="./image/arrow.png" class="arrow-img">
+
+      <!-- ✅ STEP 3 -->
+      <div class="step-box">
+        <h6>STEP 3</h6>
+        <img src="./image/step3.png">
+        
+        <p>Fill Application Form</p>
+      </div>
+
+      <img src="./image/arrow.png" class="arrow-img">
+
+      <!-- ✅ STEP 4 -->
+      <div class="step-box">
+        <h6>STEP 4</h6>
+        <img src="./image/step4.png">
+        
+        <p>Upload Required Documents</p>
+      </div>
+
+      <img src="./image/arrow.png" class="arrow-img">
+
+      <!-- ✅ STEP 5 -->
+      <div class="step-box">
+        <h6 class="step-text">STEP 5</h6>
+        <img src="./image/step5.png">
+        
+        <p>Submit Application Form</p>
+      </div>
+
+    </div>
+  </section>
 <section class="faq-section">
   <div class="container text-center">
 
