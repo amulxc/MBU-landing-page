@@ -124,6 +124,11 @@ bottom: 140px;
   line-height: 1;
 }
 
+.object-img1{
+  width: 20px;
+  height: 17px;
+}
+
 .badge-exp {
   font-size: 35px;   /* ✅ BIG 34+ */
   font-weight: 700;
@@ -255,7 +260,10 @@ html, body {
   .ranking-strip .row {
     gap: 10px;
   }
-
+.object-img1{
+  width: 15px;
+  height: 15px;
+}
   .ranking-strip img,
   .rank-icon {
     width: 82px;
@@ -537,307 +545,274 @@ html, body {
       }
     }
 
-    .placement-section {
-      background: #fafafa;
-      font-family: "Plus Jakarta Sans", sans-serif;
-    }
+.placement-section {
+  background: #fafafa;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
 
-    .placement-section .placement-wrapper {
-      padding: 40px 10px 50px;
-      position: relative;
-    }
+.placement-section .placement-wrapper {
+  padding: 40px 10px 50px;
+  position: relative;
+}
 
-    /* big empty circle on right side */
-    .placement-section .placement-circle {
-      position: absolute;
-      top: 50px;
-      right: 70px;
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      background: #d9d9d9;
-      z-index: 0;
-    }
+/* Right side grey circle */
+.placement-section .placement-circle {
+  position: absolute;
+  top: 50px;
+  right: 70px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #d9d9d9;
+  z-index: 0;
+}
 
-    /* Heading & Subtitle */
-    .placement-section .placement-tag {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
-      font-weight: 500;
-      letter-spacing: 1.5px;
-      font-size: 20px;
-      text-transform: uppercase;
-      position: relative;
-      z-index: 1;
-      margin-bottom: 15px;
-    }
+/* Heading */
+.placement-section .placement-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
 
-    .placement-section .placement-tag-icon {
-      height: 18px;
-      width: auto;
-    }
+.placement-section .placement-tag-icon {
+  height: 18px;
+}
 
-    .placement-section .placement-heading {
-      text-align: center;
-      font-family: "Roboto Flex", sans-serif;
-      font-size: 40px;
-      font-weight: 600;
-      position: relative;
-      z-index: 1;
-      margin-bottom: 40px;
-    }
+.placement-section .placement-heading {
+  text-align: center;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
 
-    /* LEFT IMAGE */
-    .placement-section .placement-img {
-      width: 88%;
-      margin-top: 20px;
-      border-radius: 18px;
-      margin-left: 40px;
-      display: block;
-    }
+/* LEFT IMAGE */
+.placement-section .placement-img {
+  width: 140%;
+  margin-top: 20px;
+  border-radius: 18px;
+  margin-left: -40px; /* Move slightly left */
+  display: block;
+}
 
-    /* WHITE CARD */
-    .placement-section .testimonial-card {
-      position: relative;
-      background: #ffffff;
-      border-radius: 22px;
-      padding: 38px;
-      margin-top: 20px;
-      border: 1px solid #d9d9d9;
-      overflow: hidden;
-    }
+/* TESTIMONIAL CARD */
+.placement-section .testimonial-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 40px;
+  margin-top: 20px;
+  border: 1px solid #d9d9d9;
+  overflow: hidden;
+  height: 245px;
+  width: 100%;
+  max-width: 900px;
+  margin-left: 65px; /* Move right */
+}
 
-    /* yellow area on right */
-    .placement-section .yellow-right {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      width: 40%;
-      border-radius: 0 22px 22px 0;
-      overflow: hidden;
-      z-index: 1;
-    }
+/* Yellow background */
+.placement-section .yellow-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  border-radius: 0 22px 22px 0;
+  overflow: hidden;
+  z-index: 1;
+}
 
-    .placement-section .yellow-layer {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
+.placement-section .yellow-layer {
+  position: absolute;
+  width: 110%;
+  height: 120%;
+  object-fit: contain;
+}
 
-    .placement-section .yellow-layer.light {
-      z-index: 1;
-      right: 10px;
-    }
+.placement-section .yellow-layer.light {
+  z-index: 2;
+  right: 10px;
+}
 
-    .placement-section .yellow-layer.dark {
-      z-index: 2;
-      left: 20px;
-    }
+.placement-section .yellow-layer.dark {
+  z-index: 3;
+  left: 10px;
+}
 
-    /* quote in center */
-    .placement-section .quote-bg {
-      position: absolute;
-      top: 50%;
-      left: 35%;
-      width: 200px;
-      transform: translate(-50%, -50%);
-      z-index: 3;
-    }
+/* Quote Icon */
+.placement-section .quote-bg {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 200px;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
 
-    /* Text block */
-    .placement-section .testimonial-body {
-      position: relative;
-      z-index: 4;
-      max-width: 65%;
-    }
+/* ========== FIXED TEXT BLOCK WIDTH (NO OVERLAY) ========== */
+.placement-section .testimonial-body {
+  position: relative;
+  z-index: 4;
+  max-width: 63%;   /* ← FIXED WIDTH */
+}
 
-    .placement-section .testimonial-text {
-      color: #6b6b6b;
-      line-height: 2;
-      font-size: 18px;
-      font-weight: 400;
-      margin-bottom: 18px;
-    }
+/* Text */
+.placement-section .testimonial-text {
+  color: #6b6b6b;
+  line-height: 2;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
 
-    .placement-section .student-name {
-      color: #034833;
-      font-weight: 700;
-      font-size: 22px;
-      margin-bottom: 4px;
-    }
+.placement-section .student-name {
+  color: #034833;
+  font-weight: 700;
+  font-size: 22px;
+}
 
-    .placement-section .student-role {
-      margin-top: -5px;
-      color: #6b7280;
-      font-size: 14px;
-    }
+.placement-section .student-role {
+  color: #6b7280;
+  font-size: 14px;
+}
 
-    /* Student Photo */
-    .placement-section .student-photo {
-      position: absolute;
-      right: 40px;
-      top: 40%;
-      transform: translateY(-50%);
-      width: 160px;
-      height: 160px;
-      border-radius: 79.5px;
-      border: 3px solid #ffffff;
-      z-index: 5;
-      object-fit: cover;
-    }
+/* Student Photo */
+.placement-section .student-photo {
+  position: absolute;
+  right: 25px;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 160px;
+  height: 160px;
+  border-radius: 79.5px;
+  border: 3px solid #ffffff;
+  z-index: 5;
+  object-fit: cover;
+}
 
-    /* Salary badge */
-    .placement-section .salary-badge {
-      position: absolute;
-      right: 30px;
-      bottom: 20px;
-      background: #ffffff;
-      width: 195px;
-      height: 52px;
-      padding: 0 10px;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 8px;
-      z-index: 6;
-      font-weight: 600;
-      font-size: 14px;
-    }
+/* Salary Badge */
+.placement-section .salary-badge {
+  position: absolute;
+  right: 25px;
+  bottom: 10px;
+  background: #ffffff;
+  width: 190px;
+  height: 52px;
+  padding: 0 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 14px;
+  z-index: 6;
+}
 
-    .placement-section .salary-badge img {
-      width: 101px;
-      height: 27px;
-      object-fit: contain;
-    }
+.placement-section .salary-badge img {
+  width: 101px;
+  height: 27px;
+}
 
-    /* STATS RED BOX */
-    .placement-section .stats-box {
-      margin-top: 25px;
-      width: 100%;
-      background: #d62828;
-      color: #ffffff;
-      border-radius: 18px;
-      padding: 35px 20px;
-      font-family: "Plus Jakarta Sans", sans-serif;
-    }
+/* STATS BOX */
+.placement-section .stats-box {
+  margin-top: 25px;
+  background: #d62828;
+  color: #ffffff;
+  border-radius: 18px;
+  padding: 35px 20px;
+  width: 100%;
+  max-width: 900px;
+  margin-left: 65px; /* align with testimonial card */
+}
 
-    .placement-section .stats-title {
-      font-size: 42px;
-      font-weight: 700;
-    }
+.placement-section .stats-title {
+  font-size: 42px;
+  font-weight: 700;
+}
 
-    .placement-section .stats-box p {
-      margin-top: 10px;
-      font-size: 14px;
-      font-weight: 400;
-      color: #ffffff;
-    }
+.placement-section .stats-box p {
+  font-size: 14px;
+}
 
-    /* ============ RESPONSIVE ============ */
+/* ======================================
+   RESPONSIVE FIXES
+====================================== */
 
-    @media (max-width: 991.98px) {
-      .placement-section .placement-circle {
-        top: 20px;
-        right: 20px;
-        width: 90px;
-        height: 90px;
-      }
-
-      .placement-section .placement-heading {
-        font-size: 32px;
-        margin-bottom: 24px;
-      }
-
-      .placement-section .placement-img {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 0;
-      }
-
-      .placement-section .testimonial-card {
-        margin-top: 0;
-        padding: 28px;
-      }
-
-      .placement-section .testimonial-body {
-        max-width: 100%;
-      }
-
-      .placement-section .student-photo {
-        right: 24px;
-        top: 42%;
-        width: 130px;
-        height: 130px;
-      }
-
-      .placement-section .salary-badge {
-        right: 24px;
-      }
-
-      .placement-section .stats-title {
-        font-size: 34px;
-      }
-    }
-
-    @media (max-width: 767.98px) {
-      .placement-section .placement-wrapper {
-        padding: 24px 10px 40px;
-      }
-
-      .placement-section .placement-circle {
+@media (max-width: 991.98px) {
+    .placement-circle{
         display: none;
-      }
+    }
+  .placement-section .placement-img {
+    width: 100%;
+    margin-left: 0;
+  }
 
-      .placement-section .placement-tag {
-        font-size: 14px;
-      }
+  .placement-section .testimonial-card,
+  .placement-section .stats-box {
+    margin-left: 0; /* center on mobile */
+  }
 
-      .placement-section .placement-heading {
-        font-size: 26px;
-      }
+  .placement-section .testimonial-body {
+    max-width: 100%; /* full width on mobile */
+  }
 
-      .placement-section .testimonial-card {
-        padding: 20px;
-      }
+  .placement-section .student-photo {
+    right: 24px;
+    width: 130px;
+    height: 130px;
+  }
 
-      .placement-section .yellow-right {
+  .placement-section .salary-badge {
+    right: 24px;
+  }
+
+  .placement-section .stats-title {
+    font-size: 34px;
+  }
+}
+
+
+@media (max-width: 767.98px) {
+
+
+      .placement-circle{
         display: none;
-      }
-
-      .placement-section .testimonial-body {
-        max-width: 100%;
-      }
-
-      .placement-section .student-photo {
-        position: static;
-        transform: none;
-        display: block;
-        margin: 20px auto 10px;
-      }
-
-      .placement-section .salary-badge {
-        position: static;
-        margin: 0 auto 10px;
-      }
-
-      .placement-section .stats-box {
-        padding: 24px 12px;
-      }
-
-      .placement-section .stats-title {
-        font-size: 28px;
-      }
-
-      .placement-section .stats-box p {
-        font-size: 12px;
-      }
     }
 
+  .placement-section .yellow-right {
+    display: none;
+  }
+
+  .placement-section .testimonial-card {
+    padding: 30px;
+    height: auto;
+  }
+
+  .placement-section .student-photo {
+    margin-left: 0px;
+    transform: none;
+    margin: 10px auto 30px;
+  }
+
+  .placement-section .salary-badge {
+    position: static;
+   margin-left: 230px;
+  }
+
+  .placement-section .stats-box {
+    padding: 20px 10px;
+  }
+
+  .placement-section .stats-title {
+    font-size: 20px;
+  }
+}
           
   .marquee {
   width: 100%;
@@ -1458,7 +1433,7 @@ html, body {
 
 
 <section class="container">
-  <small class="choose" >WHY CHOOSE US <img src="./image/object.png" class="object-img"></small>
+  <small class="choose" >WHY CHOOSE US <img src="./image/object.png" class="object-img1"></small>
   <div class="row align-items-center mt-2">
     <div class="col-lg-6">
       <h2 class="text-content">A University That Prepares <br>You for the Real World</h2>
@@ -1671,14 +1646,14 @@ html, body {
       </div>
       <h2 class="placement-heading">Proven Track Record of Excellence</h2>
 
-      <div class="row g-4 mt-2 align-items-center">
+      <div class="row g-9 mt-2 align-items-center">
         <!-- LEFT IMAGE -->
-        <div class="col-lg-4">
+        <div class="col-lg-3 ">
           <img src="image/placement-students.png" class="placement-img" />
         </div>
 
         <!-- RIGHT SIDE -->
-        <div class="col-lg-8">
+        <div class="col-lg-9 d-flex flex-column align-items-start">
           <div class="testimonial-card">
             <!-- yellow bg -->
             <div class="yellow-right">
@@ -2059,20 +2034,7 @@ html, body {
     });
   }); 
 
-    document.querySelectorAll(".accordion-button").forEach(btn=>{
-      btn.addEventListener("click",()=>{
-        const icon=btn.querySelector("span:last-child");
-        setTimeout(()=>{
-          if(btn.classList.contains("collapsed")){
-            icon.classList.remove("icon-minus");
-            icon.classList.add("icon-plus");
-          }else{
-            icon.classList.remove("icon-plus");
-            icon.classList.add("icon-minus");
-          }
-        },200);
-      });
-    });
+ 
   </script>
 </body>
 </html>
