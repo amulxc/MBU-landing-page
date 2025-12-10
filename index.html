@@ -130,15 +130,15 @@ bottom: 140px;
 }
 
 .badge-exp {
-  font-size: 35px;   /* ✅ BIG 34+ */
+  font-size: 35px;   
   font-weight: 500;
   display: block;
-  text-align: start;   /* ✅ Forces next line */
+  text-align: start;   
 }
 
 .badge-text {
   margin-top: 6px;
-  font-size: 14px;   /* ✅ Smaller tagline */
+  font-size: 14px;  
   font-weight: 300;
   display: block;
   letter-spacing: 0.5px;
@@ -682,7 +682,6 @@ html, body {
   z-index: 3;
 }
 
-/* ========== FIXED TEXT BLOCK WIDTH (NO OVERLAY) ========== */
 .placement-section .testimonial-body {
   position: relative;
   z-index: 4;
@@ -772,10 +771,6 @@ html, body {
       position: relative;
       right: 60%;
 }
-/* ======================================
-   RESPONSIVE FIXES
-====================================== */
-
 @media (max-width: 991.98px) {
     .placement-circle{
         display: none;
@@ -1188,12 +1183,11 @@ html, body {
       margin-top: 15px;
     }
 
-    /* ===== CONTACT STRIP ===== */
+  
    .mbuContactStrip {
-    
   padding-top: 40px;
   padding-bottom: 40px;
-  border-top: 2px solid #F5F5F5;   /* ✅ straight top line */
+  border-top: 2px solid #F5F5F5; 
 }
 
 
@@ -1203,8 +1197,7 @@ html, body {
       gap: 20px;
       font-weight: 400;
       font-size: 15px;
-      margin-bottom: 10px;
-      margin-left: 320px;
+      margin: 10px 0 10px 260px;
       line-height: 25.24px;
     }
 
@@ -1214,8 +1207,6 @@ html, body {
       fill: #F6C617;
       
     }
-
-    /* ===== FOOTER BAR ===== */
     .mbuFooterBar {
       background: #D71921;
       color: white;
@@ -1300,7 +1291,7 @@ html, body {
       pointer-events: none;
     }
 
-    /* ✅ ADMISSION SECTION */
+    /* ADMISSION SECTION */
     .admission-title {
       text-align: center;
       font-size: 40px;
@@ -1319,8 +1310,8 @@ html, body {
 
     .step-box {
   text-align: center;
-  width: 150px;          /* ✅ Same width for all */
-  height: 180px;         /* ✅ Same height for all */
+  width: 150px;          
+  height: 180px;         
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1329,8 +1320,8 @@ html, body {
 }
 
 .step-box img {
-  width: 60px;           /* ✅ Same icon size */
-  height: 60px;          /* ✅ Forces square */
+  width: 60px;          
+  height: 60px;          
   object-fit: contain;
 
   background: #D71921;  
@@ -1371,7 +1362,7 @@ html, body {
 
   /* ✅ FORCE VERTICAL STACKING */
   .steps-wrapper {
-    flex-direction: column;   /* ✅ Makes steps vertical */
+    flex-direction: column;   /*  Makes steps vertical */
     align-items: center;
   }
 
@@ -1381,7 +1372,7 @@ html, body {
   }
 
   .arrow-img {
-    display: none;  /* ✅ Hide arrows on mobile */
+    display: none;  /* Hide arrows on mobile */
   }
 
   .step-box p {
@@ -2000,7 +1991,7 @@ html, body {
 </section>
 <div class="container my-4">
 
-  <!-- ✅ HERO BANNER -->
+  <!-- HERO BANNER -->
   <div class="mbuHeroWrap">
     <img src="./image/banner.png" class="mbuHeroImg" alt="MBU Banner">
 
@@ -2014,7 +2005,7 @@ html, body {
     </div>
   </div>
 
-  <!-- ✅ CONTACT SECTION -->
+  <!--  CONTACT SECTION -->
   <div class="mbuContactStrip mt-4">
     <div class="row align-items-center">
 
@@ -2047,7 +2038,7 @@ html, body {
           <svg class="mbuContactIcon" viewBox="0 0 24 24">
             <path d="M12 2C8.1 2 5 5.1 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z"/>
           </svg>
-          Sree Sainath Nagar, Tirupati,<br>Chittoor (Dist),<BR> AP - 517102
+          Sree Sainath Nagar, Tirupati,<br>Chittoor (Dist),AP - 517102
         </div>
 
       </div>
@@ -2056,7 +2047,7 @@ html, body {
 
 </div>
 
-<!-- ✅ FOOTER -->
+<!-- FOOTER -->
 <div class="mbuFooterBar">
   © 2025 Mohan Babu University (MBU). All Rights Reserved.
 </div>
@@ -2073,7 +2064,7 @@ html, body {
         const bsCollapse = new bootstrap.Collapse(navCollapse, {
           toggle: false
         });
-        bsCollapse.hide(); // 🔻 closes the menu
+        bsCollapse.hide(); 
       });
     });
   }); 
