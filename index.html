@@ -431,9 +431,11 @@ html, body {
       margin-bottom:4px;
     }
     .about-single-img{
-      width:100%;
+      width:120%;
       border-radius:20px;
       object-fit:cover;
+      position: relative;
+      right: 30%;
     }
     .about-text-block{
       max-width:700px;
@@ -456,6 +458,7 @@ html, body {
       color:#727272;
       font-family:"Plus Jakarta Sans",sans-serif;
       margin-bottom:1rem;
+      margin-top: 40px;
     }
     .collab-section{
       background:#F3F3F3;
@@ -739,7 +742,12 @@ html, body {
 .placement-section .stats-box p {
   font-size: 14px;
 }
-
+.about-single-img{
+      width:120%;
+      margin-left: 130px;
+      position: relative;
+      right: 60%;
+}
 /* ======================================
    RESPONSIVE FIXES
 ====================================== */
@@ -751,6 +759,11 @@ html, body {
   .placement-section .placement-img {
     width: 100%;
     margin-left: 0;
+  }
+  .about-single-img{
+    width: 80%;
+    position: relative;
+    right: 30%;
   }
 
   .placement-section .testimonial-card,
@@ -797,12 +810,12 @@ html, body {
   .placement-section .student-photo {
     margin-left: 0px;
     transform: none;
-    margin: 10px auto 30px;
+    margin: 30px auto 30px;
   }
 
   .placement-section .salary-badge {
     position: static;
-   margin-left: 230px;
+   margin-left: 120px;
   }
 
   .placement-section .stats-box {
