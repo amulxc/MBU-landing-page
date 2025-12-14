@@ -564,6 +564,7 @@ right: 60px;
       transform:translate(-50%,-50%);
       border-radius:50%;
     }
+
 .logo-card {
   position: absolute;
   background: #ffffff;
@@ -694,8 +695,8 @@ right: 60px;
 
 /* LEFT IMAGE */
 .placement-section .placement-img {
-  width: 140%;
-  margin-top: 20px;
+  width: 131%;
+  margin-top: 16px;
   border-radius: 18px;
   margin-left: -40px; /* Move slightly left */
   display: block;
