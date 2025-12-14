@@ -46,7 +46,9 @@ width: 109%;
       margin-right: 260px;
       border-radius: 20px;
     }
-
+.mt-4, .my-4 {
+    margin-top: 5.8rem !important;
+}
     .ranking-strip {
       background: #ffc107;
       border: solid white 10px;
@@ -1517,7 +1519,7 @@ right: 60px;
       font-size: 40px;
       font-weight: 600;
       line-height: 51px;
-      margin: 60px 0 40px;
+      margin: 120px 0 60px;
     }
 
     .steps-wrapper {
@@ -1564,6 +1566,7 @@ right: 60px;
   font-weight: 600;
   margin-top:20px;
   min-height: 32px;
+  margin-bottom: 40px;
    /* ✅ Keeps text area equal even if content changes */
 }
 
