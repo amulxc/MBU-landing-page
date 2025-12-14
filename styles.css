@@ -1214,10 +1214,14 @@ right: 60px;
 }
   .faq-accordion .accordion-button{
   background: #F6C617;
-  color: #000;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 500;
+  color: #2f2e2e;
+font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
   font-size: 16px;
+line-height: 1;          /* 100% */
+letter-spacing: 0;
+text-align: center;
+font-style: "semi-bold";
   padding: 10px 18px;
   min-height: 56px;                 /* exact height you wanted */
   height: auto;                     /* fixes the box height */
@@ -1287,16 +1291,16 @@ right: 60px;
   .faq-body{
   background: #FFF7DA;
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 16px;
-  padding: 18px 26px;               /* slightly tighter */
-  text-align: left;
-  color: #000;
   font-weight: 400;
-  border-radius: 0 0 15px 15px;     /* bottom corners rounded only */
-   margin: 0 !important;
-   position: relative;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0;
+  color: #000;
 
-}
+  padding: 18px 26px;
+  text-align: left;
+  border-radius: 0 0
+  }
 
 
     @media (max-width:768px){
