@@ -525,9 +525,10 @@ border-radius: 10px 10px 0 0;
   .collab-section {
   background:#F3F3F3;
   padding-top:70px; 
-width: 108%;
+width: 100%;
+  margin: 0 auto;
 position: relative;
-right: 60px;
+
 
   }
     .collab-label{
