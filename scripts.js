@@ -93,40 +93,55 @@
   const roleEl = document.getElementById("studentRole");
   const salaryEl = document.getElementById("studentSalary");
 
-  const elements = [textEl, nameEl, roleEl, salaryEl];
+  // Only initialize if elements exist
+  if (textEl && nameEl && roleEl && salaryEl) {
+    const elements = [textEl, nameEl, roleEl, salaryEl];
 
-  elements.forEach(el => el.classList.add("testimonial-slide"));
+    elements.forEach(el => {
+      if (el) {
+        el.classList.add("testimonial-slide");
+      }
+    });
 
-  function slideTestimonial() {
-    // slide out left
-    elements.forEach(el => el.classList.add("slide-out-left"));
-
-    setTimeout(() => {
-      index = (index + 1) % testimonials.length;
-
-      textEl.textContent = testimonials[index].text;
-      nameEl.textContent = testimonials[index].name;
-      roleEl.textContent = testimonials[index].role;
-      salaryEl.textContent = testimonials[index].salary;
-
-      // move content to right (off-screen)
+    function slideTestimonial() {
+      // slide out left
       elements.forEach(el => {
-        el.classList.remove("slide-out-left");
-        el.classList.add("slide-in-right");
+        if (el) {
+          el.classList.add("slide-out-left");
+        }
       });
 
-      // slide in to center
-      requestAnimationFrame(() => {
+      setTimeout(() => {
+        index = (index + 1) % testimonials.length;
+
+        if (textEl) textEl.textContent = testimonials[index].text;
+        if (nameEl) nameEl.textContent = testimonials[index].name;
+        if (roleEl) roleEl.textContent = testimonials[index].role;
+        if (salaryEl) salaryEl.textContent = testimonials[index].salary;
+
+        // move content to right (off-screen)
         elements.forEach(el => {
-          el.classList.remove("slide-in-right");
+          if (el) {
+            el.classList.remove("slide-out-left");
+            el.classList.add("slide-in-right");
+          }
         });
-      });
 
-    }, 600);
+        // slide in to center
+        requestAnimationFrame(() => {
+          elements.forEach(el => {
+            if (el) {
+              el.classList.remove("slide-in-right");
+            }
+          });
+        });
+
+      }, 600);
+    }
+
+    // auto slide every 4 seconds
+    setInterval(slideTestimonial, 4000);
   }
-
-  // auto slide every 4 seconds
-  setInterval(slideTestimonial, 4000);
     // ---------- FAQ: arrow image + button color sync ----------
     function syncFaqVisuals() {
       $('.faq-accordion .collapse').each(function(){
