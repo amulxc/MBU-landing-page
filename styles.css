@@ -493,9 +493,10 @@ border-radius: 10px 10px 0 0;
 
    .about-section {
        /* ⬅ adds space above the section */
-    margin-bottom: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 80px;
+    margin-bottom: 0px;
+    padding-top: 60px;
+    padding-bottom: 0px;
 }
 
     .about-text-block{
@@ -521,12 +522,12 @@ border-radius: 10px 10px 0 0;
       color:#727272;
       font-family:"Plus Jakarta Sans",sans-serif;
       margin-bottom:1rem;
-      margin-top: 40px;
+      margin-top: 25px;
     }
   .collab-section {
   background:#F3F3F3;
   padding-top:80px; 
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 width: 100%;
   margin: 0 auto;
 position: relative;
@@ -562,10 +563,6 @@ position: relative;
       margin-top: 20px;
     }
 
-    .collab-section {
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
   }
 
   @media (max-width: 480px) {
@@ -591,11 +588,6 @@ position: relative;
       font-size: 14px;
       line-height: 20px;
       margin-top: 15px;
-    }
-
-    .collab-section {
-      padding-top: 20px;
-      padding-bottom: 20px;
     }
   }
     .collab-label{
@@ -695,24 +687,176 @@ position: relative;
     .logo-pos-5{top:30%;right:-4%;}
     .logo-pos-6{top:60%;right:4%;}
 
+    /* Responsive styles for collab section */
+    @media (max-width: 768px) {
+      .collab-section {
+        padding-top: 80px !important;
+        padding-bottom: 60px !important;
+        min-height: auto !important;
+      }
+
+      .collab-layout {
+        position: static !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+        padding: 0 20px !important;
+        margin: 30px auto 0 !important;
+        max-width: 100% !important;
+        aspect-ratio: auto !important;
+        height: auto !important;
+        min-height: 600px !important;
+      }
+
+      .collab-earth {
+        position: static !important;
+        transform: none !important;
+        width: 350px !important;
+        margin: 0 auto 20px !important;
+        display: block !important;
+        order: -1;
+      }
+
+      .logo-card {
+        position: relative !important;
+        width: 100% !important;
+        max-width: 280px !important;
+        height: 95px !important;
+        margin: 0 auto !important;
+        flex-shrink: 0 !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        cursor: pointer !important;
+        -webkit-tap-highlight-color: transparent !important;
+      }
+
+      .logo-card img {
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        max-width: 85% !important;
+        max-height: 70px !important;
+        width: auto !important;
+        height: auto !important;
+        transition: opacity 0.25s ease !important;
+        pointer-events: none !important;
+      }
+
+      /* Gray visible by default in responsive */
+      .logo-card img.gray {
+        opacity: 1 !important;
+        display: block !important;
+      }
+
+      /* Color hidden by default in responsive */
+      .logo-card img.color {
+        opacity: 0 !important;
+        display: block !important;
+      }
+
+      /* Hover swap — same as desktop (works on devices with hover and touch) */
+      .logo-card:hover img.gray,
+      .logo-card:active img.gray,
+      .logo-card.logo-hover img.gray {
+        opacity: 0 !important;
+      }
+
+      .logo-card:hover img.color,
+      .logo-card:active img.color,
+      .logo-card.logo-hover img.color {
+        opacity: 1 !important;
+      }
+
+      .logo-pos-1,
+      .logo-pos-2,
+      .logo-pos-3,
+      .logo-pos-4,
+      .logo-pos-5,
+      .logo-pos-6 {
+        position: static !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        margin: 0 !important;
+      }
+
+      .collab-title {
+        font-size: 28px;
+        line-height: 36px;
+      }
+
+      .collab-subtitle {
+        padding: 0 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .collab-layout {
+        gap: 15px !important;
+        padding: 0 15px !important;
+      }
+
+      .collab-earth {
+        width: 300px !important;
+        margin: 0 auto 15px !important;
+      }
+
+      .logo-card {
+        max-width: 220px !important;
+        height: 85px !important;
+        position: relative !important;
+        margin: 0 auto !important;
+        cursor: pointer !important;
+        -webkit-tap-highlight-color: transparent !important;
+      }
+
+      .logo-card img {
+        max-width: 80% !important;
+        max-height: 60px !important;
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        transition: opacity 0.25s ease !important;
+        pointer-events: none !important;
+      }
+
+      /* Gray visible by default in responsive */
+      .logo-card img.gray {
+        opacity: 1 !important;
+        display: block !important;
+      }
+
+      /* Color hidden by default in responsive */
+      .logo-card img.color {
+        opacity: 0 !important;
+        display: block !important;
+      }
+
+      /* Hover swap — same as desktop (works on devices with hover and touch) */
+      .logo-card:hover img.gray,
+      .logo-card:active img.gray,
+      .logo-card.logo-hover img.gray {
+        opacity: 0 !important;
+      }
+
+      .logo-card:hover img.color,
+      .logo-card:active img.color,
+      .logo-card.logo-hover img.color {
+        opacity: 1 !important;
+      }
+
+      .collab-title {
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+
     @media (max-width:768px){
       .programs-title{font-size:1.6rem;}
-      .collab-layout{
-       max-width:100%;
-       aspect-ratio:auto;
-      }
-      .collab-earth{
-        position:static;
-        transform:none;
-        width:220px;
-        margin:0 auto 20px;
-        display:block;
-      }
-      .logo-card{
-        position:static;
-        margin:8px auto;
-        width:80%;
-      }
       .programs-section{
         margin-left: 0px;
       
@@ -1260,7 +1404,8 @@ position: relative;
     width: 105%;
     position: relative;
     right: 60px;
-    bottom:40px;
+    bottom:80px;
+    top: 30px;
     }
 
     .faq-label{
