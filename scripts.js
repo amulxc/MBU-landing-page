@@ -73,13 +73,13 @@
       salary: "₹44 LPA"
     },
     {
-      text: "The placement guidance and industry mentoring helped me secure my dream role with confidence.",
+      text: "The placement guidance and industry mentoring helped me secure my dream role with confidence. Leverage agile frameworks to provide a robust synopsis for go for strategy foster.",
       name: "Rahul Sharma",
       role: "B.Tech Student",
       salary: "₹32 LPA"
     },
     {
-      text: "Hands-on training and continuous placement support made a huge impact on my career growth.",
+      text: "Hands-on training and continuous placement support made a huge impact on my career growth. Leverage agile frameworks to provide a robust synopsis for go for strategy foster.",
       name: "Ananya Verma",
       role: "MBA Student",
       salary: "₹28 LPA"
