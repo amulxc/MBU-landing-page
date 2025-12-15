@@ -23,10 +23,8 @@ color: white;
 position: relative;
 z-index: 1;            
 bottom: 140px; 
-
-  width: 110%;
-  right: 70px;
-
+width: 110%;
+right: 70px;
 
 }
 
@@ -488,13 +486,16 @@ border-radius: 10px 10px 0 0;
       object-fit:cover;
       position: relative;
       right: 30%;
-      margin-top: 30px;
+      margin-top: 0;
+    
       
     }
 
    .about-section {
        /* ⬅ adds space above the section */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
     .about-text-block{
@@ -524,12 +525,78 @@ border-radius: 10px 10px 0 0;
     }
   .collab-section {
   background:#F3F3F3;
-  padding-top:70px; 
+  padding-top:20px; 
+  padding-bottom: 20px;
 width: 100%;
   margin: 0 auto;
 position: relative;
 
 
+  }
+
+  /* Responsive styles for about and collab sections */
+  @media (max-width: 768px) {
+    .about-single-img {
+      width: 100%;
+      right: 0;
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+
+    .about-section {
+      margin-bottom: 15px;
+    }
+
+    .about-text-block {
+      max-width: 100%;
+    }
+
+    .about-title {
+      font-size: 28px;
+      line-height: 36px;
+    }
+
+    .about-para {
+      font-size: 14px;
+      line-height: 22px;
+      margin-top: 20px;
+    }
+
+    .collab-section {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .about-single-img {
+      width: 110%;
+      right: 0;
+      margin-top: 0;
+      margin-bottom: 30px;
+      border-radius: 15px;
+    }
+
+    .about-label {
+      font-size: 0.875rem;
+      letter-spacing: 1px;
+    }
+
+    .about-title {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    .about-para {
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 15px;
+    }
+
+    .collab-section {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   }
     .collab-label{
       font-family:"Roboto Flex",sans-serif;
@@ -658,7 +725,7 @@ position: relative;
 
 
 .placement-section {
-  
+  margin-top: 80px;
   font-family: "Plus Jakarta Sans", sans-serif;
    
 }
