@@ -2024,11 +2024,12 @@ font-style: "semi-bold";
 }
 
     .mbuContactStrip .col-md-6:last-child {
-      padding-left: 40px; /* Slight left positioning for contact items */
+      padding-left: 110px; /* Slight left positioning for contact items */
       display: flex;
       flex-direction: column;
       justify-content: center;
       gap: 0;
+      margin-top: 20px;
     }
 
     .mbuContactItem {
