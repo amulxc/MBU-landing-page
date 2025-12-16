@@ -98,7 +98,7 @@
       name: "Vatsalya Polineni",
       role: "B.Tech Student",
       salary: "₹60 LPA",
-      studentImage: "image/student.webp",
+      studentImage: "image/vastalya.png",
       companyLogo: "image/yugabytedb.webp"
     },
     {
@@ -106,7 +106,7 @@
       name: "Lakshmi Prasanna",
       role: "B.Tech Student",
       salary: "₹45 LPA",
-      studentImage: "image/",
+      studentImage: "image/hakeem.png",
       companyLogo: "image/yugabytedb.webp"
     },
     {
