@@ -12,7 +12,7 @@
   background: white;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   position: sticky;
-  top: 0;
+  top: 20px;
   z-index: 9999;
   align-self: flex-start;
 }
@@ -24,7 +24,7 @@ padding:240px 0px 200px 240px ;
 color: white;
 position: relative;
 z-index: 1;            
-bottom: 140px; 
+bottom: 210px; 
 width: 110%;
 right: 70px;
 
@@ -55,6 +55,116 @@ right: 70px;
 .mt-1, .my-1 {
   margin-top: 20px !important;
 }
+/* Hero Scrolling Banner */
+.hero-scroll-banner {
+  background: #D71921;
+  width: 110%;
+  max-width: 150%;
+  overflow: hidden;
+  position: relative;
+  padding: 12px 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  z-index: 10000;
+  box-sizing: border-box;
+  right:70px;
+}
+
+.hero-scroll-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-scroll-track {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: hero-scroll 20s linear infinite;
+}
+
+.hero-scroll-item {
+  display: inline-block;
+  background: #fff;
+  color: #000;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 10px;
+  white-space: nowrap;
+}
+
+.hero-scroll-separator {
+  color: #fff;
+  font-size: 16px;
+  margin: 0 5px;
+}
+
+@keyframes hero-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Stats Scrolling Banner */
+.stats-scroll-banner {
+  background: #D71921;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.stats-scroll-wrapper {
+  height: 51px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.stats-scroll-track {
+  display: flex;
+  white-space: nowrap;
+  animation: stats-scroll 30s linear infinite;
+}
+
+.stats-scroll-track.stats-scroll-reverse {
+  animation: stats-scroll-reverse 25s linear infinite;
+}
+
+.stats-scroll-item {
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 50px;
+  white-space: nowrap;
+  line-height: 51px;
+}
+
+@keyframes stats-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes stats-scroll-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
     .ranking-strip {
       background: #ffc107;
       border: solid white 10px;
@@ -63,7 +173,7 @@ right: 70px;
      width: 1120px;
       position: relative;
       z-index: 9999;
-      bottom: 180px;
+      bottom: 300px;
       margin-left: 210px;
      font-weight: 500;
      font-size: 27px;
@@ -88,6 +198,7 @@ right: 70px;
   border-radius: 13px;
   border: 1.86px #d9d9d9;
   margin-bottom: 20px;
+  height: 190px;
 }
 .feature-card p{
   font-weight: 400;
@@ -284,7 +395,7 @@ right: 70px;
 }
 
 .mbu-box {
-  margin-top: 0px !important;
+  margin-top: -250px !important;
   padding-top: 0 !important;
 }
 
@@ -367,6 +478,36 @@ html, body {
     margin: 32px auto 0 auto;
     padding: 80px 60px;
   }
+  /* Hero Scrolling Banner Responsive */
+  .hero-scroll-banner {
+    padding: 10px 0;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .hero-scroll-item {
+    padding: 6px 15px;
+    font-size: 12px;
+    margin: 0 8px;
+  }
+
+  .hero-scroll-separator {
+    font-size: 14px;
+    margin: 0 3px;
+  }
+
+  /* Stats Scrolling Banner Responsive */
+  .stats-scroll-wrapper {
+    height: 45px;
+  }
+
+  .stats-scroll-item {
+    font-size: 14px;
+    padding: 0 30px;
+    line-height: 45px;
+  }
+
   .ranking-strip {
     width: 64%;
     margin: 0 auto;
@@ -434,7 +575,7 @@ html, body {
     overflow-x: hidden !important;
   }
   .mbu-box{
-    margin-top: 0 !important;
+    margin-top: 20px !important;
    
   }
 
@@ -2252,10 +2393,17 @@ font-style: "semi-bold";
   padding: 17px 19px;
   background: #D71921;
   color: #fff;
-  text-align: center;
   font-size: 14px;
   z-index: 10;
   line-height: 1.5;
+}
+
+.mbuFooterBar .btn {
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  white-space: nowrap;
 }
 
 
@@ -2621,7 +2769,7 @@ font-style: "semi-bold";
    while preserving alignment rules that define the look. */
 
 /* Center the whole page visually without changing your exact widths/heights */
-body > .page-center-wrap { max-width: 1400px; margin: 0 auto; position: relative; overflow: visible; }
+body > .page-center-wrap { max-width: 1400px; margin: 0 auto; position: relative; overflow: visible; height: auto; }
 
 /* Keep navbar visually centered while preserving its original dimensions */
 .navbar {
