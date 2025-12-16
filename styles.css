@@ -852,11 +852,19 @@ border-radius: 10px 10px 0 0;
 }
 
 
+    .accordion-body h5 {
+      margin-bottom: 0 !important;
+    }
+    
+    .programs-list {
+      margin-top: 8px;
+    }
+    
     .programs-list li{
       font-family:"Plus Jakarta Sans",sans-serif;
       color:#727272;
       font-size:.94rem;
-      margin-bottom:4px;
+      margin-bottom:0;
     }
     .about-single-img{
       width:120%;
@@ -1465,9 +1473,10 @@ position: relative;
 }
 
 .placement-section .salary-badge img {
-  width: 101px;
-  height: 27px;
+  width: 90px;
+  height: 40px;
   transition: opacity 0.3s ease;
+  object-fit: contain;
 }
 
 /* STATS BOX */
@@ -1594,8 +1603,9 @@ position: relative;
   }
 
   .placement-section .salary-badge img {
-    width: 120px;
-    height: 32px;
+    width: 140px;
+    height: 40px;
+    object-fit: contain;
   }
 
   .placement-section .stats-title {
@@ -1667,7 +1677,8 @@ position: relative;
 
   .placement-section .salary-badge img {
     width: 140px;
-    height: 38px;
+    height: 40px;
+    object-fit: contain;
   }
 }
 
@@ -1701,8 +1712,9 @@ position: relative;
   }
 
   .placement-section .salary-badge img {
-    width: 130px;
-    height: 35px;
+    width: 140px;
+    height: 40px;
+    object-fit: contain;
   }
 
   .placement-section .quote-bg {
