@@ -26,25 +26,49 @@
 <nav class=" navbar navbar-expand-lg d-flex justify-content-between align-items-center">
  
   <div class="d-flex align-items-center gap-2">
-    <img src="./image/logo.webp" height="88">
+    <img src="./image/logo.webp" height="88" class=" p-2">
   </div>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mbuMenu">
     ☰
   </button>
   <div class="collapse navbar-collapse justify-content-center" id="mbuMenu">
     <ul class="navbar-nav gap-3">
-      <li class="nav-item"><a class="nav-link text-dark" href="#">Why Study Here</a></li>
-      <li class="nav-item"><a class="nav-link text-dark" href="#">Courses Offered</a></li>
-      <li class="nav-item"><a class="nav-link text-dark" href="#">Placements</a></li>
-      <li class="nav-item"><a class="nav-link text-dark" href="#">Admission Process</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="#why-study-here">Why Study Here</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="#courses-offered">Courses Offered</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="#placements">Placements</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="#admission-process">Admission Process</a></li>
     </ul>
   </div>
 
-  <button class="btn btn-danger px-4 d-none d-lg-block" id="admissionsBtn">2025-26  AY ADMISSIONS OPEN</button>
+  <button class="btn btn-danger px-4 d-none d-lg-block" id="admissionsBtn">ADMISSIONS OPEN 2026</button>
 </nav>
 
 <!-- Hero Scrolling Banner -->
-<section class="hero-scroll-banner">
+
+
+<section class="hero-section container-fluid" id="heroSection">
+
+  <div class="row align-items-center justify-content-between">
+    <div class="col-lg-7">
+      <div class="hero-badge">33+ years of excellence in higher education, guided by Padma Shri Dr. Mohan Babu.</div>
+        <h1 class="content">
+  Pursue Your Passions<br>
+  Dream 
+  <img src="./image/object.webp" class="object-img"> 
+  Believe 
+  <img src="./image/object.webp" class="object-img"> 
+  Achieve
+</h1>
+
+    </div>
+    <div class="col-lg-5">
+      <div class="hero-form">       
+      </div>
+    </div>
+  </div>
+</section>
+<div class="trans-top ">
+<section class="hero-scroll-banner ">
   <div class="hero-scroll-wrapper">
     <div class="hero-scroll-track">
       <span class="hero-scroll-item">Academic Rankings</span>
@@ -69,33 +93,9 @@
       <span class="hero-scroll-item">State-of-the-art facilities</span>
     </div>
   </div>
+
 </section>
-
-<section class="hero-section container-fluid" id="heroSection">
-
-  <div class="row align-items-center">
-    <div class="col-lg-7">
-      <div class="hero-badge">33+ years of excellence in higher education, guided by Padma Shri Dr. Mohan Babu.</div>
-        <h1 class="content">
-  Pursue Your Passions<br>
-  Dream 
-  <img src="./image/object.webp" class="object-img"> 
-  Believe 
-  <img src="./image/object.webp" class="object-img"> 
-  Achieve
-</h1>
-<p class="lorem mt-3">
-        100-acre Secured Campus | State-of-the-art facilities |  Academic Rankings | Placements | Global tie-ups
-      </p>
-    </div>
-    <div class="col-lg-5">
-      <div class="hero-form">       
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="ranking-strip container-fluid overflow-hidden">
+<section class="ranking-strip container-fluid overflow-hidden mt-2">
   <div class="row text-center align-items-center">
 
     <!-- LEFT STATIC TEXT -->
@@ -113,6 +113,10 @@
           <img src="./image/img2.webp" class="rank-icon">
           <img src="./image/img3.webp" class="rank-icon">
           <img src="./image/img4.webp" class="rank-icon">
+          <img src="./image/naac.webp" class="rank-icon">
+          <img src="./image/gauge.webp" class="rank-icon">
+          <img src="./image/nba.webp" class="rank-icon">
+          <img src="./image/innovation.webp" class="rank-icon">
 
           <!-- SET 2 (DUPLICATE) -->
           <img src="./image/img1.webp" class="rank-icon">
@@ -126,6 +130,7 @@
           <img src="./image/img3.webp" class="rank-icon">
           <img src="./image/img4.webp" class="rank-icon">
 
+
         </div>
       </div>
     </div>
@@ -133,9 +138,9 @@
   </div>
 </section>
 
+</div>
 
-
-<section class="container mbu-box">
+<section class="container mbu-box" id="why-study-here">
   <small class="choose" >WHY CHOOSE US <img src="./image/object.webp" class="object-img1"></small>
   <div class="row align-items-center mt-2">
     <div class="col-lg-6">
@@ -240,7 +245,7 @@
     </div>
   </div>
 </section>
-<section class="programs-section">
+<section class="programs-section" id="courses-offered">
   <div class="container-fluid">
 
     <div class="text-center mb-4">
@@ -270,41 +275,41 @@
               <!-- 1. SCHOOL OF COMPUTING -->
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#computing">
+                  <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#computing">
                     School of Computing
-                    <span class="icon-minus ms-auto"></span>
+                    <span class="icon-plus ms-auto"></span>
                   </button>
                 </h2>
 
-                <div id="computing" class="accordion-collapse collapse show">
+                <div id="computing" class="accordion-collapse collapse">
                   <div class="accordion-body">
-
-                    <h5 class="fw-bold mt-3 mb-2">M.Tech Programs</h5>
+                    <h5 class="fw-bold mb-2">B.Tech Programs</h5>
                     <ul class="programs-list list-unstyled">
                       <li>Computer Science and Engineering</li>
-                      <li>Computer Science Engineering (Artificial Intelligence and Data Science)</li>
-                      <li>Computer Science and Engineering (Cyber Security)</li>
-                    </ul>
-
-                    <h5 class="fw-bold mt-4 mb-2">B.Tech Programs</h5>
-                    <ul class="programs-list list-unstyled">
                       <li>Computer Science and Engineering (AI & ML)</li>
                       <li>Computer Science and Engineering (Cyber Security)</li>
                       <li>Computer Science and Engineering (Data Science)</li>
                       <li>Computer Science and Engineering (AI & DS)</li>
                       <li>Computer Science and Engineering (DevOps)</li>
                       <li>Computer Science and Engineering (Cloud Computing)</li>
-                      <li>Computer Science and Engineering</li>
                       <li>Information Technology</li>
                     </ul>
+                    <h5 class="fw-bold mb-2">M.Tech Programs</h5>
+                    <ul class="programs-list list-unstyled">
+                      <li>Computer Science and Engineering</li>
+                      <li>Computer Science Engineering (Artificial Intelligence and Data Science)</li>
+                      <li>Computer Science and Engineering (Cyber Security)</li>
+                    </ul>
 
-                  <h5 class="fw-bold mt-4 mb-2">BCA Programs</h5>
+                   
+
+                  <h5 class="fw-bold mb-2">BCA Programs</h5>
                   <ul class="programs-list list-unstyled">
                     <li>Bachelor of Computer Applications</li>
                     <li>Bachelor of Computer Applications (AI & DS)</li>
                     <li>Bachelor of Computer Applications (Cyber Security)</li>
                   </ul>
-                  <h5 class="fw-bold mt-4 mb-2">MCA Program</h5>
+                  <h5 class="fw-bold mb-2">MCA Program</h5>
                   <ul class="programs-list list-unstyled">
                     <li>Master of Computer Applications</li>
                   </ul>
@@ -325,7 +330,7 @@
                 <div id="engineering" class="accordion-collapse collapse">
                   <div class="accordion-body">
                   <!-- INSERT_YOUR_CODE -->
-                    <h5 class="fw-bold mt-3 mb-2">B.Tech Programs</h5>
+                    <h5 class="fw-bold mb-2">B.Tech Programs</h5>
                     <ul class="programs-list list-unstyled">
                       <li>Electrical and Electronics Engineering</li>
                       <li>Electronics and Communication Engineering</li>
@@ -335,7 +340,7 @@
                       <li>Civil Engineering</li>
                     </ul>
                   <!-- INSERT_YOUR_CODE -->
-                  <h5 class="fw-bold mt-4 mb-2">M.Tech Programs</h5>
+                  <h5 class="fw-bold mb-2">M.Tech Programs</h5>
                   <ul class="programs-list list-unstyled">
                     <li>Construction Technology and Management</li>
                     <li>Electrical Power Systems</li>
@@ -358,59 +363,76 @@
                 </h2>
                 <div id="commerce1" class="accordion-collapse collapse">
                   <div class="accordion-body">
-                    <h5 class="fw-bold mt-3 mb-2">B.Sc Programs</h5>
+                    <h5 class="fw-bold mb-2">B.Sc Programs</h5>
                     <ul class="programs-list list-unstyled">
                       <li>Forensic Sciences</li>
                       <li>Bioinformatics</li>
                       <li>Biotechnology</li>
                       <li>Computer Science</li>
                     </ul>
-                    <h5 class="fw-bold mt-4 mb-2">M.Sc</h5>
+                    <h5 class="fw-bold mb-2">M.Sc Programs</h5>
                     <ul class="programs-list list-unstyled">
                       <li>Biotechnology</li>
-                      <li>computer science</li>
-                      <li>organic chemistry</li>
+                      <li>Computer Science</li>
+                      <li>Organic Chemistry</li>
                     </ul>
                   </div>
                 </div>
               </div>
 
-              <!-- 4. PHARMACEUTICAL SCIENCES -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#pharma">
-                    School of Pharmaceutical Sciences
-                    <span class="icon-plus ms-auto"></span>
-                  </button>
-                </h2>
 
-                <div id="pharma" class="accordion-collapse collapse">
-                  <div class="accordion-body">
-
-                    <h5 class="fw-bold mt-3 mb-2">B.Pharmacy</h5>
-                    <ul class="programs-list list-unstyled">
-                      <li>Bachelor of Pharmacy</li>
-                    </ul>
-                    <h5 class="fw-bold mt-4 mb-2">M.Pharm s</h5>
-                    <ul class="programs-list list-unstyled">
-                      <li>Pharmaceutical analysis</li>
-                      <li>Pharmaceutics</li>
-                    </ul>
-
-                    <h5 class="fw-bold mt-4 mb-2">Pharm.D </h5>
-                    <ul class="programs-list list-unstyled">
-                      <li>Pharm.D</li>
-                      <li>Pharm.D(Post Baccalaureate)</li>
-                    </ul>
+                 <!-- 3. COMMERCE & MANAGEMENT -->
+                 <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#commerce">
+                      School of Commerce and Management
+                      <span class="icon-plus ms-auto"></span>
+                    </button>
+                  </h2>
+                  <div id="commerce" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <h5 class="fw-bold mb-2">B.Com Program</h5>
+                      <ul class="programs-list list-unstyled">
+                        <li>Computer Application</li>
+                   
+                      </ul>
+                  
+                  
+                      <h5 class="fw-bold mb-2">BBA Program</h5>
+                      <ul class="programs-list list-unstyled">
+                        <li>General</li>
+                     
+                      </ul>
+                   
+                      <h5 class="fw-bold mb-2">MBA Programs</h5>
+                      <ul class="programs-list list-unstyled">
+                        <li>Marketing</li>
+                        <li>Human Resources</li>
+                        <li>Finance</li>
+                     
+                      </ul>
+                    </div>
                   </div>
                 </div>
+  
+
+
+              <!-- 4. PHARMACEUTICAL SCIENCES -->
+              <div class="accordion-item">
+           
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#pharma">
+          School of Pharmaceutical Sciences
+          <span class="icon-plus ms-auto"></span>
+        </button>
+      </h2>
               </div>
 
               <div id="pharma" class="accordion-collapse collapse">
                 <div class="accordion-body">
 
                   <!-- SELECT COURSE -->
-                  <h5 class="fw-bold mt-3 mb-2">B.Sc</h5>
+                  <h5 class="fw-bold mb-2">B.Sc Programs</h5>
                   <ul class="programs-list list-unstyled">
                     <li>Cardio Vascular Technology</li>
                     <li>Dialysis Technology</li>
@@ -420,22 +442,60 @@
                     <li>Optometry</li>
                     <li>Radiology and Imaging Technology</li>
                   </ul>
-                  <h5 class="fw-bold mt-4 mb-2">Bachelor of Physiotherapy</h5>
+                  <h5 class="fw-bold mb-2">BPT Program</h5>
                   <ul class="programs-list list-unstyled">
                     <li>Bachelor of Physiotherapy</li>
                   </ul>
-                  <h5 class="fw-bold mt-4 mb-2">MPT</h5>
+                  <h5 class="fw-bold mb-2">MPT Programs</h5>
+                  <ul class="programs-list list-unstyled">
+                    <li>Neurology</li>
+                    <li>Orthopaedics</li>
+                    <li>Cardio Pulmonary</li>
+                    <li>Sports</li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#paramedical">
+                  School of Paramedical Allied and Healthcare Sciences
+                  <span class="icon-plus ms-auto"></span>
+                </button>
+              </h2>
+            </div>
+            <div id="paramedical" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <h5 class="fw-bold mb-2">B.Sc Programs</h5>
+                <ul class="programs-list list-unstyled">
+                  <li>Cardio Vascular Technology</li>
+                  <li>Dialysis Technology</li>
+                  <li>Emergency Medicine and Critical Care Technology</li>
+                  <li>Respiratory Therapy</li>
+                  <li>Medical Lab Technology</li>
+                  <li>Optometry</li>
+                  <li>Radiology and Imaging Technology</li>
+                </ul>
+              </div>
+              <div id="paramedical2" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <h5 class="fw-bold mb-2">BPT Programs</h5>
+                  <ul class="programs-list list-unstyled">
+                    <li>Bachelor of Physiotherapy</li>
+                  </ul>
+                </div>
+              </div>
+              <div id="paramedical3" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <h5 class="fw-bold mb-2">MPT Programs</h5>
                   <ul class="programs-list list-unstyled">
                     <li>Masters In Physiotherapy - Neurology</li>
                     <li>Masters In Physiotherapy - Orthopaedics</li>
                     <li>Masters In Physiotherapy - Cardio Pulmonary</li>
                     <li>Masters In Physiotherapy - Sports</li>
                   </ul>
-
-                </div>
-              </div>
             </div>
-
               <!-- 5. AGRICULTURE -->
               <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -448,7 +508,7 @@
                 <div id="agriculture" class="accordion-collapse collapse">
                   <div class="accordion-body">
 
-                   <h5 class="fw-bold mt-3 mb-2">B.Sc (Hons)</h5>
+                   <h5 class="fw-bold mb-2">B.Sc (Hons)</h5>
                    <ul class="programs-list list-unstyled">
                     <li>Agriculture</li>
                    </ul>
@@ -468,7 +528,27 @@
 
   </div>
 </section>
-
+<section class="py-5 about-section">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-md-5">
+        <img src="image/Image.webp" class="about-single-img" />
+      </div>
+      <div class="col-md-7">
+        <div class="about-text-block">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <span class="about-label fw-bold">About Us</span>
+            <img src="./image/object.webp" width="18" />
+          </div>
+          <h2 class="about-title fw-bold">From Local Roots to Global Careers</h2>
+          <p class="about-para">
+           At Mohan Babu University, every student’s journey is defined by a powerful blend of academic rigor, industry immersion, and global exposure. With access to state-of-the-art laboratories, international collaborations, and 65+ dynamic student clubs, learners go beyond traditional academics to develop real-world skills, leadership qualities, and the confidence to thrive on any stage.</p>
+          <p class="about-para mb-0">
+           Backed by a strong placement ecosystem of 110+ top recruiters, our students consistently achieve prestigious career outcomes — from ₹60 LPA offers at Google and high-value placements at Amazon and Deloitte to research patents and entrepreneurial ventures. At MBU, students don’t just earn degrees; they gain experiences that prepare them to lead, innovate, and excel in the real world.
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="collab-section">
   <div class="container text-center">
@@ -527,7 +607,7 @@
   </div>
 </section>
 
-  <section class="placement-section">
+  <section class="placement-section" id="placements">
     <div class="container placement-wrapper">
       <!-- decorative circle -->
       <div class="placement-circle"></div>
@@ -564,7 +644,7 @@
                 Leverage agile frameworks to provide a robust synopsis for go for strategy foster.
               </p>
 
-              <p class="student-name" id="studentName">Pavitra Reddy</p>
+              <p class="student-name mb-0" id="studentName">Pavitra Reddy</p>
               <p class="student-role" id="studentRole" >MBA Student</p>
             </div>
 
@@ -744,32 +824,21 @@
 
   </div>
 <section class="container my-5">
-  <a
-    href="https://www.youtube.com/watch?v=iS2ABJeJNF0"
-    target="_blank"
-    class="video-section"
-  >
-   <img 
-  src="./image/youtube.png"
-  class="video-thumb"
->
-
-
-    <!-- Play button -->
-    <div class="video-play"></div>
-
+  <div class="video-section">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/iS2ABJeJNF0?si=ezJON_tpe8dtUfum" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 18px;"></iframe>
+    
     <!-- Text -->
     <div class="video-overlay-text">
       Dream Big and Achieve Bigger
     </div>
-  </a>
+  </div>
 </section>
 
 
 
   <!-- ADMISSION PROCESS SECTION -->
-  <section class="container">
-    <h2 class="admission-title">Admission Process Section</h2>
+  <section class="container" id="admission-process">
+    <h2 class="admission-title">Admission Process</h2>
 
     <div class="steps-wrapper">
 
@@ -828,13 +897,13 @@
       <!-- FAQ 1 -->
       <div class="accordion-item">
         <h2 class="accordion-header">
-          <button class="accordion-button" type="button"
+          <button class="accordion-button collapsed" type="button"
                   data-bs-toggle="collapse" data-bs-target="#faq1">
            1. What are the eligibility criteria for B.Tech admission at Mohan Babu University?
-            <span class="faq-arrow"></span>
+            <span class="icon-plus ms-auto"></span>
           </button>
         </h2>
-        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
           <div class="accordion-body faq-body">
            Admission to B.Tech programs typically requires completion of 10+2 (with Physics, Chemistry, Mathematics) and a valid score in JEE Main, AP EAPCET, or the MBU Entrance Test (MBUCET). MBU also considers merit in these exams for selection.
           </div>
@@ -847,7 +916,7 @@
           <button class="accordion-button collapsed" type="button"
                   data-bs-toggle="collapse" data-bs-target="#faq2">
             2. Does Mohan Babu University offer scholarships? What are the criteria?
-            <span class="faq-arrow"></span>
+            <span class="icon-plus ms-auto"></span>
           </button>
         </h2>
         <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
@@ -864,7 +933,7 @@
           <button class="accordion-button collapsed" type="button"
                   data-bs-toggle="collapse" data-bs-target="#faq3">
             3. What is the placement scenario at Mohan Babu University?
-            <span class="faq-arrow"></span>
+            <span class="icon-plus ms-auto"></span>
           </button>
         </h2>
         <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
@@ -880,7 +949,7 @@
           <button class="accordion-button collapsed" type="button"
                   data-bs-toggle="collapse" data-bs-target="#faq4">
             4. Is Mohan Babu University a private or government institution?
-            <span class="faq-arrow"></span>
+            <span class="icon-plus ms-auto"></span>
           </button>
         </h2>
         <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
@@ -895,7 +964,7 @@
           <button class="accordion-button collapsed" type="button"
                   data-bs-toggle="collapse" data-bs-target="#faq5">
            5. What entrance exams are accepted for admission to various programs at MBU?
-            <span class="faq-arrow"></span>
+            <span class="icon-plus ms-auto"></span>
           </button>
         </h2>
         <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
@@ -925,7 +994,7 @@
         <h1 class="mbuHeroTitle">
           Take the First Step Toward Your Dream Career!
         </h1>
-        <button class="btn mbuHeroBtn text-white">Apply Now</button>
+        <button class="btn mbuHeroBtn text-white" onclick="window.location.href='#heroSection'">Apply Now</button>
       </div>
     </div>
   </div>
@@ -947,7 +1016,7 @@
           <svg class="mbuContactIcon" viewBox="0 0 24 24">
             <path d="M6.6 10.8c1.4 2.7 3.9 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.6.6 4 .6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.5 21 3 13.5 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.4.2 2.8.6 4 .1.4 0 .8-.3 1.1l-2.2 2.7z"/>
           </svg>
-          +91 9469465946
+          <a href="tel:+919469465946" style="text-decoration: none; color: inherit;">+91 9469465946</a>
         </div>
 
         <!-- EMAIL -->
@@ -955,7 +1024,7 @@
           <svg class="mbuContactIcon" viewBox="0 0 24 24">
             <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
           </svg>
-          admissions@mbu.asia
+          <a href="mailto:admissions@mbu.asia" style="text-decoration: none; color: inherit;">admissions@mbu.asia</a>
         </div>
 
         <!-- LOCATION -->

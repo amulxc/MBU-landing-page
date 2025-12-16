@@ -44,17 +44,17 @@
       if($c.hasClass('show')){
         if ($btn && $btn.length) {
           $btn.removeClass('collapsed');
-          var $iconMinus = $btn.find('.icon-minus');
-          if ($iconMinus && $iconMinus.length) {
-            $iconMinus.removeClass('icon-minus').addClass('icon-plus');
+          var $iconPlus = $btn.find('.icon-plus');
+          if ($iconPlus && $iconPlus.length) {
+            $iconPlus.removeClass('icon-plus').addClass('icon-minus');
           }
         }
       } else {
         if ($btn && $btn.length) {
           $btn.addClass('collapsed');
-          var $iconPlus = $btn.find('.icon-plus');
-          if ($iconPlus && $iconPlus.length) {
-            $iconPlus.removeClass('icon-plus').addClass('icon-minus');
+          var $iconMinus = $btn.find('.icon-minus');
+          if ($iconMinus && $iconMinus.length) {
+            $iconMinus.removeClass('icon-minus').addClass('icon-plus');
           }
         }
       }
@@ -64,9 +64,9 @@
       var $btn = findToggleButtonByCollapse($(this));
       if ($btn && $btn.length) {
         $btn.removeClass('collapsed');
-        var $iconMinus = $btn.find('.icon-minus');
-        if ($iconMinus && $iconMinus.length) {
-          $iconMinus.removeClass('icon-minus').addClass('icon-plus');
+        var $iconPlus = $btn.find('.icon-plus');
+        if ($iconPlus && $iconPlus.length) {
+          $iconPlus.removeClass('icon-plus').addClass('icon-minus');
         }
       }
     });
@@ -75,9 +75,9 @@
       var $btn = findToggleButtonByCollapse($(this));
       if ($btn && $btn.length) {
         $btn.addClass('collapsed');
-        var $iconPlus = $btn.find('.icon-plus');
-        if ($iconPlus && $iconPlus.length) {
-          $iconPlus.removeClass('icon-plus').addClass('icon-minus');
+        var $iconMinus = $btn.find('.icon-minus');
+        if ($iconMinus && $iconMinus.length) {
+          $iconMinus.removeClass('icon-minus').addClass('icon-plus');
         }
       }
     });
@@ -208,7 +208,7 @@
     // auto slide every 4 seconds
     setInterval(slideTestimonial, 4000);
   }
-    // ---------- FAQ: arrow image + button color sync ----------
+    // ---------- FAQ: button color sync (icons handled by general collapse handler) ----------
     function syncFaqVisuals() {
       $('.faq-accordion .collapse').each(function(){
         var id = $(this).attr('id');
@@ -218,17 +218,9 @@
 
         if($(this).hasClass('show')){
           $btn.removeClass('collapsed');
-          var $arrow = $btn.find('.faq-arrow');
-          if ($arrow && $arrow.length) {
-            $arrow.css({'background-image':'url("./image/drop1.webp")','transform':'rotate(180deg)'});
-          }
           $btn.css({'background':'#D71921','color':'#fff'});
         } else {
           $btn.addClass('collapsed');
-          var $arrow2 = $btn.find('.faq-arrow');
-          if ($arrow2 && $arrow2.length) {
-            $arrow2.css({'background-image':'url("./image/drop2.png")','transform':'rotate(0deg)'});
-          }
           $btn.css({'background':'#F6C617','color':'#000'});
         }
       });
@@ -244,10 +236,6 @@
       var $btn = $('[data-target="#'+id+'"], [data-bs-target="#'+id+'"], [aria-controls="'+id+'"]');
       if (!$btn || !$btn.length) return;
       $btn.removeClass('collapsed');
-      var $arrow = $btn.find('.faq-arrow');
-      if ($arrow && $arrow.length) {
-        $arrow.css({'background-image':'url("./image/drop1.webp")','transform':'rotate(180deg)'});
-      }
       $btn.css({'background':'#D71921','color':'#fff'});
     });
 
@@ -257,10 +245,6 @@
       var $btn = $('[data-target="#'+id+'"], [data-bs-target="#'+id+'"], [aria-controls="'+id+'"]');
       if (!$btn || !$btn.length) return;
       $btn.addClass('collapsed');
-      var $arrow = $btn.find('.faq-arrow');
-      if ($arrow && $arrow.length) {
-        $arrow.css({'background-image':'url("./image/drop2.png")','transform':'rotate(0deg)'});
-      }
       $btn.css({'background':'#F6C617','color':'#000'});
     });
 

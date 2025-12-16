@@ -1,3 +1,7 @@
+ html {
+      scroll-behavior: smooth;
+    }
+
  body {
       background: #f8f9fa;
       font-family: "Roboto Flex", sans-serif;
@@ -20,13 +24,14 @@
 .hero-section {
 background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),url("./image/campus.webp") center/cover no-repeat;
 border-radius: 0 0 90px 90px;
-padding:240px 0px 200px 240px ;
+display: flex;
+justify-content: center;
+align-items: center;
 color: white;
 position: relative;
 z-index: 1;            
 bottom: 210px; 
-width: 110%;
-right: 70px;
+min-height: 100vh;
 
 }
 
@@ -45,8 +50,8 @@ right: 70px;
       background: rgba(255, 255, 255, 0.562);
       backdrop-filter: blur(10px);
       width: 340px;
-      height: 320px;
-      margin-right: 260px;
+      min-height: 400px;
+      margin-top: 60px;
       border-radius: 20px;
     }
 .mt-4, .my-4 {
@@ -69,7 +74,6 @@ right: 70px;
   z-index: 10000;
   box-sizing: border-box;
   right:70px;
-  top: 460px;
 }
 
 .hero-scroll-wrapper {
@@ -174,7 +178,6 @@ right: 70px;
      width: 1100px;
       position: relative;
       z-index: 9999;
-      bottom: 280px;
       margin-left: 210px;
      font-weight: 500;
      font-size: 27px;
@@ -199,7 +202,7 @@ right: 70px;
   border-radius: 13px;
   border: 1.86px #d9d9d9;
   margin-bottom: 20px;
-  height: 190px;
+  height: fit-content;
 }
 .feature-card p{
   font-weight: 400;
@@ -213,7 +216,7 @@ right: 70px;
 
 .feature-card h6 {
   margin-bottom: 4px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .feature-card > img,
@@ -416,7 +419,10 @@ html, body {
   }
 
   .navbar img {
-    height: 42px;
+    height: 62px;
+    @media screen and (max-width: 768px) {
+      height: 62px !important;
+    }
   }
 
   .navbar-toggler {
@@ -737,6 +743,9 @@ html, body {
       overflow:hidden;
       min-height:670px;
       margin-top: 40px;
+      @media screen and (max-width: 768px) {
+        padding: 40px 0px;
+      }
     }
 
 .programs-inner {
@@ -773,7 +782,7 @@ html, body {
       max-height:390px;
       overflow-y:auto;
       padding-right:6px;
-      padding-top: 0;
+      padding-top: 20px
     }
     .programs-right::-webkit-scrollbar{
       width:8px;
@@ -803,9 +812,10 @@ html, body {
   .programs-inner .accordion-button {
   width: 100%;
   padding: 12px 18px;
-border-radius: 10px 10px 0 0;
+border-radius: 10px;
   display: flex;
   align-items: center;
+  text-align: left;
   justify-content: space-between;
   background: #F6C617; /* closed state default */
   border: 0;
@@ -815,7 +825,7 @@ border-radius: 10px 10px 0 0;
 .programs-inner .accordion-button.collapsed {
   background:#E4E4E4;
   color: #000;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500x;
 }
 
@@ -2561,7 +2571,7 @@ font-style: "semi-bold";
   }
 
   .mbuContactStrip .col-md-6:last-child {
-    padding-left: 80px;
+    padding-left: 20px;
     margin-top: 20px;
   }
 
@@ -2599,7 +2609,7 @@ font-style: "semi-bold";
 
   .mbuMobileCenter img {
     width: 160px !important;
-    margin-right: 30px;
+    
   }
 
   .mbuContactItem {
@@ -2872,7 +2882,6 @@ body > .page-center-wrap { max-width: 1400px; margin: 0 auto; position: relative
 }
 
 /* Keep hero form aligned inside its column (don't override hero padding to avoid layout shifts) */
-.hero-form { margin-right: 260px; }
 
 /* Ensure marquee and track don't create extra horizontal overflow when zooming */
 .marquee, .marquee .track { max-width: 100%; box-sizing: border-box; }
@@ -2895,3 +2904,18 @@ html, body { overflow-x: hidden; min-width: 320px; }
   opacity: 0;
 }
 
+.trans-top{
+  display: block;
+  position: relative;
+  z-index: 1;
+  transform: translateY(-342px);
+  overflow: hidden;
+  margin-bottom: 42px !important;
+  @media screen and (max-width: 768px) {
+    transform: translateY(-132px);
+    margin-bottom: -122px !important;
+  }
+}
+h5{
+  font-size: 1rem ;
+}
