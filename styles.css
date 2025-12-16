@@ -556,7 +556,7 @@ right:70px;
   /* Responsive styles for about and collab sections */
   @media (max-width: 768px) {
     .about-single-img {
-      width: 100%;
+width: 100%;
       right: 0;
       margin-top: 0;
       margin-bottom: 40px;
@@ -568,8 +568,8 @@ right:70px;
       padding-top:80px; 
       padding-bottom: 0px;
     width: 110%;
-      margin: 0 auto;
-    position: relative;
+  margin: 0 auto;
+position: relative;
     right:20px;
     }
    
@@ -1492,7 +1492,7 @@ right:70px;
     }
 
     .campus-img-bottom {
-      bottom: 0;
+      bottom: -20px;
       transform: translateY(50%);
     }
 
@@ -1503,7 +1503,7 @@ right:70px;
       object-fit: cover;
       border-radius: 10px;
     }
-
+      
     /* Hide duplicate images on desktop/web */
     .campus-img-row .col-auto:nth-child(n+4) {
       display: none;
@@ -1843,7 +1843,7 @@ font-style: "semi-bold";
   line-height: 30px;
   letter-spacing: 0;
   color: #000;
- 
+
   padding: 18px 26px;
   text-align: left;
   border-radius: 0 0
@@ -2366,7 +2366,7 @@ font-style: "semi-bold";
   width: 150px;          
   min-width: 150px;
   max-width: 150px;
-  height: 180px;
+  height: 180px;         
   min-height: 180px;
   max-height: 180px;
   display: flex;
