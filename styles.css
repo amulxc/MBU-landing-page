@@ -2477,8 +2477,7 @@ font-style: "semi-bold";
  /* Footer: normal centered footer (placed OUTSIDE .page-center-wrap) */
 .mbuFooterBar {
   width: 100%;               /* fills the page-center width */
-  max-width: 1600px;        /* match your .page-center-wrap max (adjust if you used different) */
-  margin: 24px auto 0;      /* center and add top gap */
+       /* center and add top gap */
   box-sizing: border-box;
   padding: 17px 19px;
   background: #D71921;
