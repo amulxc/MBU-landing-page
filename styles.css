@@ -138,6 +138,7 @@ right: 70px;
   justify-content: space-around;
   gap: 16px;
   margin: 0 auto;
+  margin-bottom: 60px;
 }
 
 .stats-item {
@@ -198,10 +199,11 @@ right: 70px;
 }
 
 .stats-divider {
-  width: 1px;
+  width: 2px;
   height: 80px;
   background: #000;
   flex-shrink: 0;
+  font-weight: bold;
 }
 
   .leader-img {
@@ -465,8 +467,9 @@ html, body {
 
   .stats-divider {
     width: 80%;
-    height: 1px;
+    height: 2px;
     margin: 10px 0;
+    background: #000;
   }
 
   .stats-number {
