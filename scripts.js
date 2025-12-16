@@ -91,7 +91,7 @@
       role: "B.Tech Student",
       salary: "₹60 LPA",
       studentImage: "image/harshavika.png",
-      companyLogo: "image/yugabytedb.webp"
+      companyLogo: "image/logo20.png"
     },
     {
       text: "My experience at MBU was truly transformational. Every project, every lab session, and every mentor interaction helped me become industry-ready and confident.",
@@ -99,7 +99,7 @@
       role: "B.Tech Student",
       salary: "₹60 LPA",
       studentImage: "image/vastalya.png",
-      companyLogo: "image/yugabytedb.webp"
+      companyLogo: "image/logo20.png"
     },
     {
       text: "MBU gave me more than an education — it gave me direction. The placement training and continuous encouragement helped me achieve a milestone I’m truly proud of.",
@@ -107,7 +107,7 @@
       role: "B.Tech Student",
       salary: "₹45 LPA",
       studentImage: "image/hakeem.png",
-      companyLogo: "image/yugabytedb.webp"
+      companyLogo: "image/amazon.png"
     },
     {
       text: "MBU taught me how to think, how to solve problems, and how to grow. The opportunities here opened the door to a career I once only dreamed of.",
