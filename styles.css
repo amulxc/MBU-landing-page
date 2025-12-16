@@ -99,6 +99,7 @@ bottom: 140px;
 
 .feature-card h6 {
   margin-bottom: 4px;
+  font-size: 20px;
 }
 
 .feature-card > img,
@@ -304,11 +305,11 @@ html, body {
   }
 
   .feature-card img {
-    width: 34px;
+    width: 39px;
   }
 
   .feature-card h6 {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .feature-card p {
@@ -603,8 +604,10 @@ right:70px;
     }
 
     .about-label {
-      font-size: 16px;
+      font-size: 20px;
       letter-spacing: 1px;
+      font-family:'Roboto Flex';
+      font-weight: 600;
     }
 
     .about-title {
@@ -1654,7 +1657,7 @@ right:70px;
   }
 
   .campus-redbox h2 {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 28px;
     margin-top: 10px;
     padding: 0 5px;
