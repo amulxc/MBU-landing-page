@@ -629,6 +629,7 @@ right:70px;
       letter-spacing:2.03px;
       text-transform:uppercase;
       opacity:.9;
+      color: #1D1D1D;
     }
     .collab-title{
       font-family:"Roboto Flex",sans-serif;
@@ -945,11 +946,13 @@ right:70px;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 1.5px;
   font-size: 20px;
   text-transform: uppercase;
   margin-bottom: 15px;
+  color: #1D1D1D;
+  font-family: "Roboto flex" , sans-serif;
 }
 
 .placement-section .placement-tag-icon {
@@ -974,7 +977,17 @@ right:70px;
   border-radius: 18px;
   display: block;
 }
+.placement{
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 500;
+  font-size: 20.28px;
+  line-height: 20.28px;
+  letter-spacing: 2.03px;
+  text-transform: uppercase;
+  opacity: .9;
+  color: #1D1D1D;
 
+}
 /* TESTIMONIAL CARD */
 .placement-section .testimonial-card {
   position: relative;
