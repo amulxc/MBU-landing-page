@@ -530,6 +530,7 @@ border-radius: 10px 10px 0 0;
       font-size:40px;
       line-height:51.35px;
       font-family:"Roboto Flex",sans-serif;
+      font-weight: 600;
     }
     .about-para{
       font-size:16px;
@@ -1438,7 +1439,7 @@ right:70px;
       background:#D71921;
       height: 440px;
       border-radius: 16px;
-      padding: 160px 40px;
+      padding: 120px 40px 160px 40px;
       text-align: center;
       color: white;
       position: relative;
@@ -1450,11 +1451,16 @@ right:70px;
     }
 
     .campus-redbox h2 {
-      font-size: 32px;
-      line-height: 44px;
-      font-weight: 700;
-      margin-top: 10px;
+      font-family: "Roboto Flex", sans-serif;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 51.35px;
+      letter-spacing: 0%;
+      text-align: center;
+      margin-top: 0;
       margin-bottom: 0;
+      position: relative;
+      z-index: 3;
     }
 
     .campus-img-row {
