@@ -50,6 +50,9 @@ bottom: 140px;
 .mt-4, .my-4 {
     margin-top: 5.8rem !important;
 }
+.mt-1, .my-1 {
+  margin-top: 20px !important;
+}
     .ranking-strip {
       background: #ffc107;
       border: solid white 10px;
