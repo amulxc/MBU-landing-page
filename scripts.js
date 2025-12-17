@@ -94,11 +94,19 @@
       companyLogo: "image/logo20.png"
     },
     {
+      text: "MBU pushed me to aim higher and trust my abilities. The learning culture here shaped the confidence that helped me crack one of the biggest opportunities of my life.",
+      name: "Sumanaswini",
+      role: "B.Tech Student",
+      salary: "₹60 LPA",
+      studentImage: "image/sumana.png",
+      companyLogo: "image/logo20.png"
+    },
+    {
       text: "My experience at MBU was truly transformational. Every project, every lab session, and every mentor interaction helped me become industry-ready and confident.",
       name: "Vatsalya Polineni",
       role: "B.Tech Student",
       salary: "₹60 LPA",
-      studentImage: "image/vastalya.png",
+      studentImage: "image/vatsalya.png",
       companyLogo: "image/logo20.png"
     },
     {
@@ -111,30 +119,6 @@
     },
     {
       text: "MBU taught me how to think, how to solve problems, and how to grow. The opportunities here opened the door to a career I once only dreamed of.",
-      name: "Hakeem Aswath Basha",
-      role: "B.Tech Student",
-      salary: "₹44 LPA",
-      studentImage: "image/hakeem.png",
-      companyLogo: "image/amazon.png"
-    },
-    {
-      text: "MBU taught me how to think, how to solve problems, and how to grow. The opportunities here opened the door to a career I once only dreamed of.",
-      name: "Putta Reddy",
-      role: "B.Tech Student",
-      salary: "₹44 LPA",
-      studentImage: "image/putta.png",
-      companyLogo: "image/amazon.png"
-    },
-    {
-      text: "MBU taught me how to think, how to solve problems, and how to grow. The opportunities here opened the door to a career I once only dreamed of.",
-      name: "Sumanaswini",
-      role: "B.Tech Student",
-      salary: "₹44 LPA",
-      studentImage: "image/sumana.png",
-      companyLogo: "image/logo20.webp"
-    },
-    {
-      text: "MBU taught me how to think, how to solve problems, and how to grow. The opportunities here opened the door to a career I once only dreamed of.",
       name: "Pavitra Reddy",
       role: "B.Tech Student",
       salary: "₹44 LPA",
@@ -142,12 +126,28 @@
       companyLogo: "image/yugabytedb.webp"
     },
     {
+      text: "Every day at MBU added something new to my journey — clarity, discipline, and the drive to do better. That growth is what helped me secure my dream role.",
+      name: "Hakeem Aswath Basha",
+      role: "B.Tech Student",
+      salary: "₹32 LPA",
+      studentImage: "image/hakeem.png",
+      companyLogo: "image/amazon.png"
+    },
+    {
       text: "MBU taught me how to think, how to solve problems, and how to grow. The opportunities here opened the door to a career I once only dreamed of.",
+      name: "Putta Reddy",
+      role: "B.Tech Student",
+      salary: "₹32 LPA",
+      studentImage: "image/putta.png",
+      companyLogo: "image/amazon.png"
+    },
+    {
+      text: "MBU gave me the right platform to discover my strengths. The supportive environment and consistent training played a huge role in helping me achieve this success.",
       name: "Raparti G Aamreen",
       role: "B.Tech Student",
-      salary: "₹44 LPA",
+      salary: "₹32 LPA",
       studentImage: "image/raparti.png",
-      companyLogo: "image/yugabytedb.webp"
+      companyLogo: "image/amazon.png"
     },
     
   ];

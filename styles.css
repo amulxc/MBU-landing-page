@@ -31,7 +31,7 @@ color: white;
 position: relative;
 z-index: 1;            
 bottom: 210px; 
-min-height: 100vh;
+min-height: 120vh;
 
 }
 
@@ -154,7 +154,7 @@ min-height: 100vh;
 
 .feature-card h6 {
   margin-bottom: 4px;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .feature-card > img,
@@ -260,7 +260,7 @@ min-height: 100vh;
 }
 
   .leader-img {
-      max-width: 300px;
+      max-width: 355px;
       border-radius: 20px;
     }
 .badge-years {
@@ -337,7 +337,7 @@ min-height: 100vh;
   font-weight: 600;
 }
 .container{
-  max-width: 1050px;
+  max-width: 1125px;
   width: 100%;
   margin: 0 auto 100px;
   position: relative;
@@ -393,8 +393,8 @@ html, body {
     padding: 12px 0;
   }
   .hero-section {
-    padding-top: 140px;
-    padding-bottom: 110px;
+    /* padding-top: 40px; */
+    padding-bottom: 100px;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 0;
@@ -538,11 +538,11 @@ html, body {
   }
 
   .feature-card h6 {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .feature-card p {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 18px;
   }
   .leader-img,
@@ -584,6 +584,7 @@ html, body {
     padding: 30px 20px;
     flex-direction: column;
     gap: 20px;
+    margin-top: 0px;
   }
 
   .stats-item {
@@ -879,7 +880,7 @@ position: relative;
     }
 
     .about-title {
-      font-size: 34px;
+      font-size: 32px;
       line-height: 36px;
     }
 
@@ -908,7 +909,7 @@ position: relative;
     }
 
     .about-title {
-      font-size: 34px;
+      font-size: 27px;
       line-height: 32px;
     }
 
@@ -1478,6 +1479,10 @@ position: relative;
     max-width: 100% !important;
     margin-top: 18px;
   }
+  .placement-section .placement-heading {
+  font-size: 27px;
+}
+
 }
 
       
@@ -2443,6 +2448,7 @@ font-style: "semi-bold";
       text-align: center;
       color: white;
       padding: 30px;
+      background-color: #0a00009e;
     }
 
     .mbuHeroTitle {
