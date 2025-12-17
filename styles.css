@@ -1211,6 +1211,19 @@ position: relative;
     @media (max-width:768px){
       .programs-title{font-size:34px;}
       
+      .programs-label{
+        font-size: 20px;
+      }
+      
+      .programs-section .d-flex.justify-content-center {
+        gap: 4px !important;
+      }
+      
+      .programs-section .d-flex.justify-content-center img[src*="object2"] {
+        width: 16px !important;
+        height: auto;
+      }
+      
       .accordion-button{
         margin-top: 10px;
       }
