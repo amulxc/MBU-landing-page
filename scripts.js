@@ -286,5 +286,152 @@
       }, 500);
     });
 
+    // ---------- Rankings Marquee Manual Navigation with Auto-Scroll ----------
+    (function() {
+      const track = document.getElementById('rankingsTrack');
+      const prevBtn = document.getElementById('rankingsPrev');
+      const nextBtn = document.getElementById('rankingsNext');
+      const container = track ? track.closest('.marquee-container') : null;
+      
+      if (!track || !prevBtn || !nextBtn) return;
+      
+      const images = track.querySelectorAll('.rank-icon');
+      if (images.length === 0) return;
+      
+      const gap = 14; // gap between images
+      let currentTranslate = 0;
+      let autoScrollInterval = null;
+      let isPaused = false;
+      const autoScrollDelay = 3000; // 3 seconds between auto-scrolls
+      const pauseResumeDelay = 5000; // Resume auto-scroll after 5 seconds of inactivity
+      let pauseTimeout = null;
+      
+      function getImageWidth() {
+        // Get actual computed width of first image
+        if (images.length > 0) {
+          const firstImg = images[0];
+          const style = window.getComputedStyle(firstImg);
+          return parseFloat(style.width) || (window.innerWidth <= 768 ? 95 : 240);
+        }
+        return window.innerWidth <= 768 ? 95 : 240;
+      }
+      
+      function calculateNavigation() {
+        const imageWidth = getImageWidth();
+        const itemWidth = imageWidth + gap;
+        const containerWidth = track.parentElement.offsetWidth;
+        const visibleItems = Math.max(1, Math.floor(containerWidth / itemWidth));
+        const maxTranslate = Math.max(0, (images.length - visibleItems) * itemWidth);
+        return { itemWidth, visibleItems, maxTranslate };
+      }
+      
+      function updateButtons() {
+        const { maxTranslate } = calculateNavigation();
+        prevBtn.disabled = currentTranslate <= 0;
+        nextBtn.disabled = currentTranslate >= maxTranslate;
+      }
+      
+      function moveTrack() {
+        track.style.transform = `translateX(-${currentTranslate}px)`;
+        updateButtons();
+      }
+      
+      function autoScroll() {
+        if (isPaused) return;
+        
+        const { itemWidth, visibleItems, maxTranslate } = calculateNavigation();
+        
+        if (currentTranslate >= maxTranslate) {
+          // Loop back to start
+          currentTranslate = 0;
+        } else {
+          // Move forward by one item
+          currentTranslate = Math.min(maxTranslate, currentTranslate + itemWidth);
+        }
+        
+        moveTrack();
+      }
+      
+      function startAutoScroll() {
+        if (autoScrollInterval) return;
+        autoScrollInterval = setInterval(autoScroll, autoScrollDelay);
+      }
+      
+      function stopAutoScroll() {
+        if (autoScrollInterval) {
+          clearInterval(autoScrollInterval);
+          autoScrollInterval = null;
+        }
+      }
+      
+      function pauseAutoScroll() {
+        isPaused = true;
+        stopAutoScroll();
+        
+        // Clear any existing resume timeout
+        if (pauseTimeout) {
+          clearTimeout(pauseTimeout);
+        }
+      }
+      
+      function resumeAutoScroll() {
+        isPaused = false;
+        startAutoScroll();
+      }
+      
+      function pauseAndResume() {
+        pauseAutoScroll();
+        
+        // Resume after delay
+        pauseTimeout = setTimeout(function() {
+          resumeAutoScroll();
+        }, pauseResumeDelay);
+      }
+      
+      prevBtn.addEventListener('click', function() {
+        const { itemWidth, visibleItems, maxTranslate } = calculateNavigation();
+        if (currentTranslate > 0) {
+          currentTranslate = Math.max(0, currentTranslate - itemWidth * visibleItems);
+          moveTrack();
+        }
+        pauseAndResume();
+      });
+      
+      nextBtn.addEventListener('click', function() {
+        const { itemWidth, visibleItems, maxTranslate } = calculateNavigation();
+        if (currentTranslate < maxTranslate) {
+          currentTranslate = Math.min(maxTranslate, currentTranslate + itemWidth * visibleItems);
+          moveTrack();
+        }
+        pauseAndResume();
+      });
+      
+      // Pause on hover, resume on mouse leave
+      if (container) {
+        container.addEventListener('mouseenter', pauseAutoScroll);
+        container.addEventListener('mouseleave', resumeAutoScroll);
+      }
+      
+      // Initialize buttons on load and resize
+      function initNavigation() {
+        const { maxTranslate } = calculateNavigation();
+        currentTranslate = Math.min(currentTranslate, maxTranslate);
+        moveTrack();
+      }
+      
+      window.addEventListener('resize', function() {
+        initNavigation();
+        // Restart auto-scroll after resize
+        stopAutoScroll();
+        setTimeout(startAutoScroll, 1000);
+      });
+      
+      // Small delay to ensure DOM is fully rendered, then start auto-scroll
+      setTimeout(function() {
+        initNavigation();
+        startAutoScroll();
+      }, 100);
+    })();
+
   });
 })(jQuery);
