@@ -423,6 +423,9 @@ html, body {
     height: auto;
     margin: 32px auto 0 auto;
     padding: 80px 60px;
+    position: relative;
+    left: 0;
+    display: block;
   }
 
   /* Stats Scrolling Banner Responsive */
@@ -2603,24 +2606,6 @@ font-style: "semi-bold";
 }
 
 /* TEXT OVERLAY */
-.video-overlay-text {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  text-align: center;
-  font-size: 67px;
-  font-weight: 500;
-  background: linear-gradient(to bottom, #FFFFFF 0%, #FEF3CD 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  text-shadow: none;
-  padding: 0 20px;
-  z-index: 4;
-  pointer-events: none;
-}
 
 /* HOVER EFFECT */
 .video-section:hover .video-play {
@@ -2637,11 +2622,6 @@ font-style: "semi-bold";
 
   .video-section {
     margin-top: 0;
-  }
-
-  .video-overlay-text {
-    font-size: 20px;
-    bottom: 12px;
   }
 
   .video-play {
@@ -2735,12 +2715,6 @@ font-style: "semi-bold";
       flex-shrink: 0;
     }
 @media (max-width: 768px) {
-
-  .video-overlay-text {
-    font-size: 20px;
-    bottom: 15px;
-  }
-
 
   /* ✅ FORCE VERTICAL STACKING */
   .steps-wrapper {
