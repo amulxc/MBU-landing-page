@@ -4,7 +4,7 @@
 
  body {
       background: #f8f9fa;
-      font-family: "Roboto Flex", sans-serif;
+      font-family: "Montserrat", sans-serif;
     }
     
    .navbar {
@@ -248,7 +248,7 @@ min-height: 100vh;
   color: #000;
   line-height: 1.2;
   margin-bottom: 4px;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .stats-label {
@@ -256,7 +256,7 @@ min-height: 100vh;
   font-weight: 400;
   color: #000;
   text-align: left;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .stats-divider {
@@ -333,7 +333,7 @@ min-height: 100vh;
 }
 .choose{
   letter-spacing: 2.03px;
-  font-family: "Roboto Flex";
+  font-family: "Montserrat", sans-serif;
   font-size: 20.28px;
   font-weight: 600;
 }
@@ -462,7 +462,7 @@ html, body {
 }
 
 .course-label {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: #444;
@@ -472,7 +472,7 @@ html, body {
   padding: 10px 15px;
   border-radius: 8px;
   border: 1px solid #ccc;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   outline: none;
   cursor: pointer;
@@ -686,7 +686,7 @@ html, body {
       text-transform:uppercase;
       color:#ffffff;
       opacity:.95;
-      font-family:"Plus Jakarta Sans",sans-serif;
+      font-family:"Montserrat",sans-serif;
     }
     .programs-title{
       color:#ffffff;
@@ -792,7 +792,7 @@ border-radius: 10px;
     }
     
     .programs-list li{
-      font-family:"Plus Jakarta Sans",sans-serif;
+      font-family:"Montserrat",sans-serif;
       color:#727272;
       font-size:.94rem;
       margin-bottom:0;
@@ -823,7 +823,7 @@ border-radius: 10px;
       letter-spacing:2px;
       font-size:1rem;
       text-transform:uppercase;
-      font-family:"Plus Jakarta Sans",sans-serif;
+      font-family:"Montserrat",sans-serif;
       opacity:.9;
       
       
@@ -831,14 +831,14 @@ border-radius: 10px;
     .about-title{
       font-size:40px;
       line-height:51.35px;
-      font-family:"Roboto Flex",sans-serif;
+      font-family:"Montserrat",sans-serif;
       font-weight: 600;
     }
     .about-para{
       font-size:16px;
       line-height:25.67px;
       color:#727272;
-      font-family:"Plus Jakarta Sans",sans-serif;
+      font-family:"Montserrat",sans-serif;
       margin-bottom:1rem;
       margin-top: 25px;
     }
@@ -907,7 +907,7 @@ position: relative;
     .about-label {
       font-size: 20px;
       letter-spacing: 1px;
-      font-family:'Roboto Flex';
+      font-family:'Montserrat', sans-serif;
       font-weight: 600;
     }
 
@@ -923,7 +923,7 @@ position: relative;
     }
   }
     .collab-label{
-      font-family:"Roboto Flex",sans-serif;
+      font-family:"Montserrat",sans-serif;
       font-weight:500;
       font-size:20.28px;
       line-height:20.28px;
@@ -933,7 +933,7 @@ position: relative;
       color: #1D1D1D;
     }
     .collab-title{
-      font-family:"Roboto Flex",sans-serif;
+      font-family:"Montserrat",sans-serif;
       font-weight:600;
       font-size:40px;
       line-height:51.35px;
@@ -941,7 +941,7 @@ position: relative;
       margin:13px 0 30px;
     }
     .collab-subtitle{
-      font-family:"Plus Jakarta Sans",sans-serif;
+      font-family:"Montserrat",sans-serif;
       font-weight:400;
       font-size:16px;
       line-height:25.67px;
@@ -1224,7 +1224,7 @@ position: relative;
 
 .placement-section {
   margin-top: 80px;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
    
 }
 
@@ -1253,7 +1253,7 @@ position: relative;
   text-transform: uppercase;
   margin-bottom: 15px;
   color: #1D1D1D;
-  font-family: "Roboto flex" , sans-serif;
+  font-family: "Montserrat" , sans-serif;
 }
 
 .placement-section .placement-tag-icon {
@@ -1262,7 +1262,7 @@ position: relative;
 
 .placement-section .placement-heading {
   text-align: center;
-  font-family: "Roboto Flex", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 40px;
@@ -1279,7 +1279,7 @@ position: relative;
   display: block;
 }
 .placement{
-  font-family: "Roboto Flex", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 20.28px;
   line-height: 20.28px;
@@ -1774,7 +1774,7 @@ position: relative;
     }
 
     .campus-redbox h2 {
-      font-family: "Roboto Flex", sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-weight: 600;
       font-size: 40px;
       line-height: 51.35px;
@@ -2041,7 +2041,7 @@ position: relative;
     }
 
     .faq-label{
-      font-family:"Roboto Flex",sans-serif;
+      font-family:"Montserrat",sans-serif;
       font-size:16px;
       letter-spacing:2.03px;
       text-transform:uppercase;
@@ -2050,7 +2050,7 @@ position: relative;
     }
 
     .faq-title{
-      font-family:"Roboto Flex",sans-serif;
+      font-family:"Montserrat",sans-serif;
       font-size:40px;
       font-weight:600;
       margin-bottom:40px;
@@ -2144,7 +2144,7 @@ font-style: "semi-bold";
 
   .faq-body{
   background: #FFF7DA;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
@@ -2254,7 +2254,7 @@ font-style: "semi-bold";
         font-size: 16px;
         line-height: 24px;
         padding: 16px 18px;
-        font-family: "Plus Jakarta Sans", sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-weight: 400;
       }
     }
@@ -2303,7 +2303,7 @@ font-style: "semi-bold";
         line-height: 22px;
         padding: 14px 16px;
         font-weight:400;
-        font-family: 'Roboto Flex';
+        font-family: 'Montserrat', sans-serif;
       }
     }
 
