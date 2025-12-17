@@ -106,8 +106,32 @@
       name: "Lakshmi Prasanna",
       role: "B.Tech Student",
       salary: "₹45 LPA",
+      studentImage: "image/lakshmi.png",
+      companyLogo: "image/amazon.png"
+    },
+    {
+      text: "MBU taught me how to think, how to solve problems, and how to grow. The opportunities here opened the door to a career I once only dreamed of.",
+      name: "Hakeem Aswath Basha",
+      role: "B.Tech Student",
+      salary: "₹44 LPA",
       studentImage: "image/hakeem.png",
       companyLogo: "image/amazon.png"
+    },
+    {
+      text: "MBU taught me how to think, how to solve problems, and how to grow. The opportunities here opened the door to a career I once only dreamed of.",
+      name: "Putta Reddy",
+      role: "B.Tech Student",
+      salary: "₹44 LPA",
+      studentImage: "image/putta.png",
+      companyLogo: "image/amazon.png"
+    },
+    {
+      text: "MBU taught me how to think, how to solve problems, and how to grow. The opportunities here opened the door to a career I once only dreamed of.",
+      name: "Sumanaswini",
+      role: "B.Tech Student",
+      salary: "₹44 LPA",
+      studentImage: "image/sumana.png",
+      companyLogo: "image/logo20.webp"
     },
     {
       text: "MBU taught me how to think, how to solve problems, and how to grow. The opportunities here opened the door to a career I once only dreamed of.",
@@ -115,6 +139,14 @@
       role: "B.Tech Student",
       salary: "₹44 LPA",
       studentImage: "image/student.webp",
+      companyLogo: "image/yugabytedb.webp"
+    },
+    {
+      text: "MBU taught me how to think, how to solve problems, and how to grow. The opportunities here opened the door to a career I once only dreamed of.",
+      name: "Raparti G Aamreen",
+      role: "B.Tech Student",
+      salary: "₹44 LPA",
+      studentImage: "image/raparti.png",
       companyLogo: "image/yugabytedb.webp"
     },
     
