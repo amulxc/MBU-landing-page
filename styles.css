@@ -36,16 +36,6 @@ min-height: 100vh;
 }
 
 
-.hero-badge {
-      background: #ffc107;
-      color: black;
-      padding: 8px 18px;
-      border-radius: 5px;
-      font-size: 14px;
-      font-weight:600;
-      display: inline-block;
-      margin-bottom: 20px;
-    }
 .hero-form {
       background: rgba(255, 255, 255, 0.562);
       backdrop-filter: blur(10px);
@@ -404,12 +394,6 @@ html, body {
     left:0px;
   }
 
-  .hero-badge {
-    text-align: center;
-    display: block;
-    margin: 0 auto 18px auto;
-    font-size: 13px;
-  }
 
   .content {
     font-size: 34px;
