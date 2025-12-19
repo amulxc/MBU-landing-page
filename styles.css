@@ -1666,7 +1666,6 @@ position: relative;
     width: 150px;
   }
 }
-
 @media (max-width: 991.98px) {
   .marquee-btm { margin-bottom: 6px !important; }
   .placement-section .placement-wrapper { padding-top: 20px !important; }
